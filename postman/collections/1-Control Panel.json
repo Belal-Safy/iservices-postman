@@ -34,8 +34,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/login",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/login",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -66,8 +66,8 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/me",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/me",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -103,8 +103,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/logout",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/logout",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -146,8 +146,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/refresh-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/refresh-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -189,8 +189,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/change-password",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/change-password",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -227,8 +227,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/send-password-reset-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/send-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -264,8 +264,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/check-password-reset-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/check-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -301,8 +301,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/check-password-reset-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/check-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -338,8 +338,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/auth/reset-password",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/reset-password",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -378,8 +378,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -445,8 +445,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies/add-company",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/add-company",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -480,8 +480,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies/1/update-info",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-info",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -517,8 +517,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies/1/update-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -554,8 +554,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies/1/delete-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/delete-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -590,8 +590,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies/delete",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/delete",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -625,8 +625,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/companies/change-status",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/change-status",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -688,8 +688,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -729,8 +729,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories/add-category",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/add-category",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -764,8 +764,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories/1/update-info",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/update-info",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -801,8 +801,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories/1/update-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/update-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -838,8 +838,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories/1/delete-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/delete-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -874,8 +874,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories/delete",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/delete",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -909,8 +909,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/categories/change-status",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/change-status",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -972,8 +972,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1013,8 +1013,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories/add-category",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories/add-category",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1048,8 +1048,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories/1/update-info",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories/1/update-info",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1085,8 +1085,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories/1/update-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories/1/update-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1122,8 +1122,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories/1/delete-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories/1/delete-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1158,8 +1158,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories/delete",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories/delete",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1193,8 +1193,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/subcategories/change-status",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/subcategories/change-status",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1256,8 +1256,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1297,8 +1297,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services/add-service",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services/add-service",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1332,8 +1332,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services/1/update-info",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services/1/update-info",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1369,8 +1369,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services/1/update-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services/1/update-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1406,8 +1406,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services/1/delete-image",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services/1/delete-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1442,8 +1442,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services/delete",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services/delete",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -1477,8 +1477,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/control-panel/manage/services/change-status",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/services/change-status",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],

@@ -34,8 +34,8 @@
 							]
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/login",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/login",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -89,8 +89,8 @@
 							]
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/signup",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/signup",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -123,8 +123,8 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/logout",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/logout",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -163,8 +163,8 @@
 							]
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/refresh-token",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/refresh-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -198,8 +198,8 @@
 							]
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/send-password-reset-token",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/send-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -232,8 +232,8 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/check-password-reset-token",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/check-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -266,8 +266,8 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/auth/reset-password",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/auth/reset-password",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -301,8 +301,8 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/profile/me",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/profile/me",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -341,8 +341,8 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/profile/change-password",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/profile/change-password",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -375,8 +375,8 @@
 							}
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/profile/update-info",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/profile/update-info",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -410,8 +410,8 @@
 							]
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/profile/update-profile-image",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/profile/update-profile-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -439,8 +439,8 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "https://{{host}}/api/users/profile/delete-profile-image",
-							"protocol": "https",
+							"raw": "{{protocol}}://{{host}}/api/users/profile/delete-profile-image",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],

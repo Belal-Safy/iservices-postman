@@ -34,8 +34,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/login",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/login",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -66,8 +66,8 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/me",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/me",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -103,8 +103,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/logout",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/logout",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -146,8 +146,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/refresh-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/refresh-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -189,8 +189,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/change-password",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/change-password",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -227,8 +227,8 @@
 							]
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/send-password-reset-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/send-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -264,8 +264,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/check-password-reset-token",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/check-password-reset-token",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],
@@ -301,8 +301,8 @@
 							}
 						},
 						"url": {
-							"raw": "http://{{host}}/api/companies/auth/reset-password",
-							"protocol": "http",
+							"raw": "{{protocol}}://{{host}}/api/companies/auth/reset-password",
+							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
 							],

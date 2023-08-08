@@ -1,0 +1,1522 @@
+{
+	"info": {
+		"_postman_id": "5d5e8138-258f-415b-9608-6b5d59ff4bf3",
+		"name": "1-Control Panel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28168267-5d5e8138-258f-415b-9608-6b5d59ff4bf3"
+	},
+	"item": [
+		{
+			"name": "Cp User Auth",
+			"item": [
+				{
+					"name": "login",
+					"id": "0c1be8aa-53ab-4cbf-ba1a-7be106624b72",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal.aglan2@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "Bb12345!",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/login",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "me",
+					"id": "e3fa837e-b89d-473d-8ebd-d3738c40fa45",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/me",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"id": "f0846558-f68d-48da-ac82-9fd4b4b3d2be",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/logout",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-token",
+					"id": "0e443f39-b400-4025-a50f-cd6d2ce44b55",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal2@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/refresh-token",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-password",
+					"id": "3efe0134-b6b9-4899-b9b9-25cc7fb1121e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "content-lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_password\": \"Bb12345!\",\r\n    \"new_password\": \"Bb12345!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/change-password",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-password-reset-token",
+					"id": "4760f862-1eb9-4a31-8bf6-c368bb5de539",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal.aglan2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/send-password-reset-token",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"send-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check-password-reset-token",
+					"id": "947b199a-3882-472e-9432-077140af2351",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"ORr9ZT702q9UIyt3BW04XDqe0FSPq4sg7Jn2Bdiflk8iAW51sb2BqrfAbi2T\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/check-password-reset-token",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"check-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check-password-reset-token Copy",
+					"id": "110044bc-369d-4bae-912c-380c7883a72b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"ORr9ZT702q9UIyt3BW04XDqe0FSPq4sg7Jn2Bdiflk8iAW51sb2BqrfAbi2T\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/check-password-reset-token",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"check-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"id": "60fbcfa5-b0b2-486d-8448-92dacf6dce7f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"assssssssssssssssssssssssdcasds\",\r\n    \"new_password\": \"Bb12345#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/auth/reset-password",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "ce0e2ae8-5b30-4f3b-abbb-8838cfb687bc"
+		},
+		{
+			"name": "Manage Companies",
+			"item": [
+				{
+					"name": "get all companies",
+					"id": "e1b5aef7-153e-4b3e-b4d2-7f2ab55b3d2e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add company",
+					"id": "6325b8a6-9921-4b43-9fab-5a0a9f97c302",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_name_ar",
+									"value": "القحطاني2",
+									"type": "text"
+								},
+								{
+									"key": "company_name_en",
+									"value": "Al-Qahtani2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "qahtani1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Aa12345#",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "050816352165",
+									"type": "text"
+								},
+								{
+									"key": "telephone",
+									"value": "05455587",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies/add-company",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"add-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company info",
+					"id": "c021e669-a51c-444b-a89f-b8ec28bf7244",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"02451021\",\r\n    \"telephone\":\"011348\",\r\n    \"email\":\"qahtani@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies/1/update-info",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company image",
+					"id": "6ecd6fa8-0e95-419a-a3ef-ac9a92747876",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/IMG_20220911_062150.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies/1/update-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete company image",
+					"id": "811ef831-bf04-4643-8450-d269d26f7edd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies/1/delete-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"delete-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete companies",
+					"id": "246988ff-c411-4023-90fe-03b3f4c55936",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[5]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies/delete",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change companies status",
+					"id": "31e89d46-8834-4175-adc4-716fdd940f23",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1],\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/companies/change-status",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d720d05f-9049-4d6b-8336-cf74c8865786",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ea0d6a7b-a852-409f-be35-aa497879a3ac",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "154d229f-a2dd-48a4-8c0d-107bda5c8532",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Manage Categories",
+			"item": [
+				{
+					"name": "get all categories",
+					"id": "188722be-ff7c-44c3-ae01-c108ebb78217",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add category",
+					"id": "7d29213d-40ef-4c8b-b5ea-ac5c4281aa2d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name_en\":\"plumbing\",\r\n    \"category_name_ar\":\"سباكة\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories/add-category",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"add-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category info",
+					"id": "8a49a179-2cd7-4eec-8ba9-1dcfd009ad9e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"02451021\",\r\n    \"telephone\":\"011348\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories/1/update-info",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"1",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category image",
+					"id": "93bf351b-9212-4ba7-b560-0916a1dde4a2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/IMG_20220911_062150.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories/1/update-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"1",
+								"update-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category image",
+					"id": "14fb7cc0-9c20-4503-a7ea-5de4e193b478",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories/1/delete-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"1",
+								"delete-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete categories",
+					"id": "c4b78ed4-422c-4369-b836-c8300996a69b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[5]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories/delete",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change categories status",
+					"id": "ae16f71b-ab64-4914-9176-1898d164e02b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1],\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/categories/change-status",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "32baec8e-3b15-4ba1-94c9-2453fa7330f2",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ea0d6a7b-a852-409f-be35-aa497879a3ac",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "154d229f-a2dd-48a4-8c0d-107bda5c8532",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Manage Subategories",
+			"item": [
+				{
+					"name": "get all companies",
+					"id": "b112dc3b-1a4a-4a22-92d0-620887af5e51",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add subcategory",
+					"id": "d82627f4-8f9c-471c-911d-eb523475642c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name_en\":\"plumbing\",\r\n    \"category_name_ar\":\"سباكة\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories/add-category",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories",
+								"add-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subcategory info",
+					"id": "ea451013-8281-4d13-84ef-00b100895b9d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"02451021\",\r\n    \"telephone\":\"011348\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories/1/update-info",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories",
+								"1",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update subcategory image",
+					"id": "012dfb18-4314-407a-b556-b29a5d0b6d56",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/IMG_20220911_062150.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories/1/update-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories",
+								"1",
+								"update-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete subcategory image",
+					"id": "13c1a83b-38e1-4e97-962d-85edb9db4bca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories/1/delete-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories",
+								"1",
+								"delete-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete subcategories",
+					"id": "c743ff39-2405-491c-9693-3845129d6c8d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[5]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories/delete",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change subcategories status",
+					"id": "b4986987-e601-4f95-b8c8-a47b357355a7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1],\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/subcategories/change-status",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"subcategories",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "524edc43-be17-4e88-bc2b-bdf9793fbb34",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ea0d6a7b-a852-409f-be35-aa497879a3ac",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "154d229f-a2dd-48a4-8c0d-107bda5c8532",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Manage Services",
+			"item": [
+				{
+					"name": "get all services",
+					"id": "cc152f3c-425a-4620-b1be-a286e0246c0c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add service",
+					"id": "af98ffda-333e-47c4-8124-53139cfabdea",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name_en\":\"plumbing\",\r\n    \"category_name_ar\":\"سباكة\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services/add-service",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services",
+								"add-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update service info",
+					"id": "f555845e-2c4a-4ef0-bb04-96d0d5e638e1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"02451021\",\r\n    \"telephone\":\"011348\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services/1/update-info",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services",
+								"1",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update service image",
+					"id": "e68d556a-f8ef-4037-a22a-dbbfd55e9295",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/IMG_20220911_062150.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services/1/update-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services",
+								"1",
+								"update-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete service image",
+					"id": "f3da07d9-6be5-4912-acf7-9abff57c2a4d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services/1/delete-image",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services",
+								"1",
+								"delete-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete service",
+					"id": "d8ec36e3-1be7-47b0-86c9-6f1fcc9a065a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[5]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services/delete",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change services status",
+					"id": "ebc115fc-bda9-41ed-b6bd-9052731b985a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1],\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://{{host}}/api/control-panel/manage/services/change-status",
+							"protocol": "http",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"services",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "106e511f-86f3-4031-ae3d-a4c20aefd710",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "ea0d6a7b-a852-409f-be35-aa497879a3ac",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "154d229f-a2dd-48a4-8c0d-107bda5c8532",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}

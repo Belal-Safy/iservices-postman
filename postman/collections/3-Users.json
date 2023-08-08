@@ -1,0 +1,493 @@
+{
+	"info": {
+		"_postman_id": "ca2241b1-38c0-4009-8d33-20f33a751c52",
+		"name": "3-Users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28168267-ca2241b1-38c0-4009-8d33-20f33a751c52"
+	},
+	"item": [
+		{
+			"name": "User Auth",
+			"item": [
+				{
+					"name": "login",
+					"id": "54ac5c42-b4d2-4243-aae7-0c22f846c218",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal.aglan32@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "Bb12345!",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/login",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup",
+					"id": "e098aaf6-cddb-45c7-bb49-7fe28971d769",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "first_name",
+									"value": "Ali",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "Hesham",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "belal.aglan2@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "Bb12345!",
+									"type": "default"
+								},
+								{
+									"key": "phone",
+									"value": "01245545",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/signup",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"id": "eb7a8067-075d-4b1f-87a6-91ece54118f7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/logout",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-token",
+					"id": "de59b5f2-cbda-4c0d-a826-7dc63dae715b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal2@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/refresh-token",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-password-reset-token",
+					"id": "a466439d-7df3-4da7-8e0a-ae911ff4e934",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal.aglan3@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/send-password-reset-token",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"send-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check-password-reset-token",
+					"id": "a70c7c4f-b2e1-409d-84b0-8848930b5f37",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"2JPlfeU4pFcLuWswF7ejA6Ub1oioryunQ7RFsAQ6ndduBoYmgJOlnYt4OoUh\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/check-password-reset-token",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"check-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"id": "ba101726-2013-4e70-a0e9-a7ce388f886a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"XqQHg3fNIJpbvitPPJu1GraibJU8tflxPNgMlv7V75BJGI4bNdUUAozy3AWa\",\r\n    \"new_password\": \"Bb12345!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/auth/reset-password",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "a49e8cb9-287b-418f-848b-1416ecbb9346"
+		},
+		{
+			"name": "User Profile",
+			"item": [
+				{
+					"name": "me",
+					"id": "1eb423e2-38ce-4d5d-8859-a47b8cd69f68",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/profile/me",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"profile",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-password",
+					"id": "11df2d05-6a85-494a-80a3-e2f14892b337",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "content-lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_password\":\"Bb12345!\",\r\n    \"new_password\":\"Bb12345#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/profile/change-password",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"profile",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user info",
+					"id": "7489de52-eebe-41ce-b70f-046f7b518f4e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"ahmed\",\r\n    \"email\":\"belal.aglan32@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/profile/update-info",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"profile",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update profile image",
+					"id": "abafefce-059f-4db5-98df-b5017931b53e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/IMG_20220210_001029.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/profile/update-profile-image",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"profile",
+								"update-profile-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete  profile image",
+					"id": "77f2f412-a884-4750-a15b-251eec701694",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "https://{{host}}/api/users/profile/delete-profile-image",
+							"protocol": "https",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"profile",
+								"delete-profile-image"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "b4be1bd2-eb7e-4d9c-8bfc-62ea3c2d00e5"
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NlcnZpY2VzLWFwcC5iZWxhbC1zYWZ5LmNvbS9hcGkvdXNlcnMvYXV0aC9sb2dpbiIsImlhdCI6MTY5MTQ1MTYyOCwiZXhwIjoxNjkyMDU2NDI4LCJuYmYiOjE2OTE0NTE2MjgsImp0aSI6IlZSVHFkbXJzRHhUYXhLOHQiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9._5C8d9nKsS4_T9I6Z3PcEUDPGVXaJlrI9M96ONxNtGI",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "064a1c92-cec7-4ce0-8aab-0ada787e251a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "3ef66ba7-f67f-4980-9c3d-5c42623d4660",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

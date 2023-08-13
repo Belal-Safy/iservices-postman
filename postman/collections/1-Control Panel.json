@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "dd643d8b-71de-442c-b2c4-4b588fc7edc3",
+		"_postman_id": "b6ddd7a5-2aad-4a26-bdd6-5bb27cd67af3",
 		"name": "1-Control Panel",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "28168267-dd643d8b-71de-442c-b2c4-4b588fc7edc3"
+		"_uid": "28168267-b6ddd7a5-2aad-4a26-bdd6-5bb27cd67af3"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "login",
-					"id": "b118a99d-f6ce-4462-a0da-fb9c2d843f9b",
+					"id": "608f3a99-2a13-40fd-a426-d6b60469f2d6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -51,7 +51,7 @@
 				},
 				{
 					"name": "me",
-					"id": "6068b0d0-2adb-4010-88d2-cb084dac98dc",
+					"id": "a8ad485c-a194-40e8-b6d5-8314e89e3393",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -83,7 +83,7 @@
 				},
 				{
 					"name": "logout",
-					"id": "16b795fd-e421-4a62-a50b-e2dbb1efbbde",
+					"id": "635a358d-9ede-4ced-b250-7e666816fd78",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -120,7 +120,7 @@
 				},
 				{
 					"name": "refresh-token",
-					"id": "e8c0e706-d3d9-4fcb-a304-13877fda981f",
+					"id": "42f4e0a8-33a4-44b2-8e24-ca427e86b436",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -163,7 +163,7 @@
 				},
 				{
 					"name": "change-password",
-					"id": "fb192ee8-ef4d-44b9-a07c-7c3bf37cc685",
+					"id": "1257d79b-26fb-443d-9eff-ea43aaa9296b",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -206,7 +206,7 @@
 				},
 				{
 					"name": "is authenticated",
-					"id": "6f803364-a884-463e-a7b4-a456b87ca11b",
+					"id": "054c4494-83bf-4d74-a3c1-7ba4d291f529",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -238,7 +238,7 @@
 				},
 				{
 					"name": "send-password-reset-token",
-					"id": "4c5bdb8d-f215-460d-bfbb-900a2dd7d8b9",
+					"id": "c66373c5-1c24-4da3-b946-dc17a3f59c1c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -276,7 +276,7 @@
 				},
 				{
 					"name": "check-password-reset-token",
-					"id": "5cffda39-b816-403f-98ad-0c87f3fb0c43",
+					"id": "946faabe-1b72-4cc2-92c9-33ae23fd3d2c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -313,7 +313,7 @@
 				},
 				{
 					"name": "reset-password",
-					"id": "d411b39b-5256-4bb4-8490-759ab719a947",
+					"id": "0cb28478-a187-4182-804c-7f19d337c062",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -349,14 +349,14 @@
 					"response": []
 				}
 			],
-			"id": "2e2b9633-c35c-48d8-bd1b-ec131df190a1"
+			"id": "4438d99f-9bdb-4845-b8c5-36e0e4c46826"
 		},
 		{
 			"name": "Manage Companies",
 			"item": [
 				{
 					"name": "get all companies",
-					"id": "b014fa76-080e-4856-97b0-82d5828c612f",
+					"id": "ba85f56a-cca7-44bc-a427-039e1ca384de",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -391,7 +391,7 @@
 				},
 				{
 					"name": "get company",
-					"id": "70c765af-7f1b-49e5-8e8f-5e846330a952",
+					"id": "87127959-afe3-4285-867d-8601ef48867e",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -426,7 +426,7 @@
 				},
 				{
 					"name": "add company",
-					"id": "79277bc3-c5bd-4311-9180-dd9a7fbc38f7",
+					"id": "7a310b72-1376-4467-9195-25de27ac7780",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -494,7 +494,7 @@
 				},
 				{
 					"name": "update company info",
-					"id": "d0c4edc6-3957-4e74-9b34-1bf13a5e430b",
+					"id": "7bdc17f5-a4e4-49b1-a0d5-90d4778b9096",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -530,7 +530,7 @@
 				},
 				{
 					"name": "update company image",
-					"id": "34cbb357-5502-4d2d-a2d4-4ae311ed0698",
+					"id": "01f05d9d-da15-4ec1-8e48-9c277ee967da",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -543,7 +543,9 @@
 								{
 									"key": "company_img",
 									"type": "file",
-									"src": "/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
+									"src": [
+										"/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
+									]
 								}
 							]
 						},
@@ -567,7 +569,7 @@
 				},
 				{
 					"name": "delete company image",
-					"id": "0735fbf3-e2ab-491c-a31f-f6d56e3a0343",
+					"id": "7e25c3f5-6e9a-497a-8cc7-22b1c40cd691",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -580,7 +582,9 @@
 								{
 									"key": "brand_img",
 									"type": "file",
-									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+									"src": [
+										"/C:/Users/belal/Pictures/restored/bfcai.png"
+									]
 								}
 							]
 						},
@@ -604,7 +608,7 @@
 				},
 				{
 					"name": "delete companies",
-					"id": "183e73bd-8b0f-40ea-8504-f1655ca09efb",
+					"id": "22131b33-a05c-4ff1-a45b-ea64927c0673",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -639,7 +643,7 @@
 				},
 				{
 					"name": "change companies status",
-					"id": "a76133d3-df8b-4298-bcb5-f69858802f7b",
+					"id": "7c23912d-15f2-4d0e-9147-ca3104d3e3a7",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -673,12 +677,12 @@
 					"response": []
 				}
 			],
-			"id": "544efbab-9e27-402a-9529-3b66d08e7e0e",
+			"id": "9a525421-4242-41ea-92b0-f3a2cf1d0e77",
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0b015e1f-b1ca-4f48-b573-ad1bd10f5bd4",
+						"id": "2b4a382e-632d-4f6a-9f27-5155d7d3d772",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -688,7 +692,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "69d2b940-0a16-401a-b44d-ae0339738a54",
+						"id": "814a45aa-f535-4030-b923-dd730b20ff08",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -705,7 +709,7 @@
 					"item": [
 						{
 							"name": "get all services",
-							"id": "a1566349-3f66-4922-be6c-1ff5fced6fc7",
+							"id": "b5f029dd-25b3-4a52-8dfd-1e6e00eea68e",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -741,7 +745,7 @@
 						},
 						{
 							"name": "get service",
-							"id": "b6a3bc9a-efc7-4570-9db0-00ec4b496c52",
+							"id": "087d7537-d7fa-401d-8b6e-65180ab6a6fb",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -778,7 +782,7 @@
 						},
 						{
 							"name": "add service",
-							"id": "7142327f-cfc0-4cec-adb2-c39ce136084d",
+							"id": "eff731c4-a61d-4eb6-83f3-4580579247a6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -822,7 +826,7 @@
 						},
 						{
 							"name": "update service info",
-							"id": "ef6d97ed-17fb-4225-a5da-d37599baa2fb",
+							"id": "19542e1f-60f0-4d68-8b8e-ed5629bd2edc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -860,7 +864,7 @@
 						},
 						{
 							"name": "update service image",
-							"id": "c1b3e1f4-d4f6-44a0-b702-0e58efc7fca4",
+							"id": "8f12e628-2226-4c51-a385-b5a178d2d4e5",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -873,7 +877,9 @@
 										{
 											"key": "service_img",
 											"type": "file",
-											"src": "/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
+											"src": [
+												"/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
+											]
 										}
 									]
 								},
@@ -899,7 +905,7 @@
 						},
 						{
 							"name": "delete service image",
-							"id": "399a9db4-be5b-4465-acb1-6dd386dc8305",
+							"id": "a520551c-7762-4d87-a79c-6efd39601dd7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -932,7 +938,7 @@
 						},
 						{
 							"name": "delete service",
-							"id": "088e700b-6128-4ce0-827a-520a6307ecaa",
+							"id": "21140db2-1564-4866-b8de-71e2520f0ed7",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -969,7 +975,7 @@
 						},
 						{
 							"name": "change services status",
-							"id": "c777823f-b587-48d7-9882-0ca4c9e5f2c7",
+							"id": "28875d9f-e91d-4a2f-8629-bec22b35f869",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1005,12 +1011,12 @@
 							"response": []
 						}
 					],
-					"id": "7a481ad6-a33f-4d1c-80c9-789c2ae30300",
+					"id": "50e9f39c-a6e1-4b0e-afd2-efcea55ad919",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "a947b07d-626a-4ed0-b970-6e8a1c3d722d",
+								"id": "e27601e8-233a-43d8-987c-2aae9a70c7a5",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1020,7 +1026,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bfa93f68-ad6e-4020-96c1-6688c475170d",
+								"id": "8a051358-1e42-4b54-9d66-928f6a5e3384",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1034,7 +1040,7 @@
 					"item": [
 						{
 							"name": "get all subcategories",
-							"id": "5221a9f0-895e-4b33-b1d7-b77223dffd66",
+							"id": "89bad6df-763f-4c6f-a175-6baf7feeef5c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1070,7 +1076,7 @@
 						},
 						{
 							"name": "get subcategory",
-							"id": "7756a74f-df37-4000-93f5-d0b2a282b327",
+							"id": "d80d01a0-9842-4d5d-a9f2-3deb9d01da63",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1107,7 +1113,7 @@
 						},
 						{
 							"name": "add subcategory",
-							"id": "0eb9a227-572d-46e1-b4d0-334a24809d5f",
+							"id": "999d537b-5746-4379-aa35-db7d708a9fa1",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1163,7 +1169,7 @@
 						},
 						{
 							"name": "update subcategory info",
-							"id": "41bc7682-b6cd-4eee-a4e9-db1bb5f8596f",
+							"id": "80bfca27-1c3e-49cf-97d1-4c34889463b0",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1201,7 +1207,7 @@
 						},
 						{
 							"name": "update subcategory image",
-							"id": "298812fe-6598-4613-a049-0ed9a22a9b94",
+							"id": "d80d9d4f-f668-409a-87ab-216c67433994",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1214,7 +1220,9 @@
 										{
 											"key": "subcategory_img",
 											"type": "file",
-											"src": "/C:/Users/belal/Pictures/restored/IMG_20210611_150755.png"
+											"src": [
+												"/C:/Users/belal/Pictures/restored/IMG_20210611_150755.png"
+											]
 										}
 									]
 								},
@@ -1240,7 +1248,7 @@
 						},
 						{
 							"name": "delete subcategory image",
-							"id": "c0a309f7-bffb-4c1d-a4ca-70988c91ed58",
+							"id": "d2469da1-4c26-46d4-be09-292a7e97d06b",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1253,7 +1261,9 @@
 										{
 											"key": "brand_img",
 											"type": "file",
-											"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+											"src": [
+												"/C:/Users/belal/Pictures/restored/bfcai.png"
+											]
 										}
 									]
 								},
@@ -1279,7 +1289,7 @@
 						},
 						{
 							"name": "delete subcategories",
-							"id": "9e25265e-0c13-43e9-9bc4-6d6f5f4105f2",
+							"id": "f3618e7d-4623-4bff-bf26-403e96c2d234",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1316,7 +1326,7 @@
 						},
 						{
 							"name": "change subcategories status",
-							"id": "fdd38815-a77e-43ea-9dee-8572e3f80eeb",
+							"id": "afde3f67-54f9-43af-b2ae-a37017ab3d0c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1352,12 +1362,12 @@
 							"response": []
 						}
 					],
-					"id": "ccab874e-0a29-4f5d-9a8d-2b2a0f9fe49a",
+					"id": "5d67c6c6-ef4b-4214-8fde-72e3af648c10",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "6f38db4c-0eaa-4c10-8a24-911a070cac68",
+								"id": "5cecebf0-8062-41e0-8ba2-101cbc7a9ede",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1367,7 +1377,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "66bd3230-79cc-4a1c-af86-48e37d150b0f",
+								"id": "d64eda4a-e99c-4864-92db-57089ac5b49e",
 								"type": "text/javascript",
 								"exec": [
 									""
@@ -1378,7 +1388,7 @@
 				},
 				{
 					"name": "get all categories",
-					"id": "460f1fc4-243a-4b8c-b0bb-9a88e73db7a6",
+					"id": "80daf45f-4fbe-4f4a-ab1c-a88cc92425a3",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1412,7 +1422,7 @@
 				},
 				{
 					"name": "get category",
-					"id": "eb18733e-d7be-4e8e-a7d4-1e6ca1a8c1bf",
+					"id": "e55dd188-674a-427f-8505-5936638d1b4c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1447,7 +1457,7 @@
 				},
 				{
 					"name": "add category",
-					"id": "6e645428-02a5-4658-be8f-d5cc67604a64",
+					"id": "dc2c7ec9-ff94-4225-aaf5-a72a74a0035d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1489,7 +1499,7 @@
 				},
 				{
 					"name": "update category info",
-					"id": "05f8ab55-b460-405c-942d-b4a4e6a7a1c6",
+					"id": "c1cd3950-303e-43aa-8cfc-f9a6fd0d4d84",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1525,7 +1535,7 @@
 				},
 				{
 					"name": "update category image",
-					"id": "80b74aac-5019-4361-8616-1af64701322e",
+					"id": "2ca58d1d-8015-4cae-8286-b49b6a9b30e0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1538,7 +1548,9 @@
 								{
 									"key": "category_img",
 									"type": "file",
-									"src": "/C:/Users/belal/Pictures/restored/Picture2.png"
+									"src": [
+										"/C:/Users/belal/Pictures/restored/Picture2.png"
+									]
 								}
 							]
 						},
@@ -1562,7 +1574,7 @@
 				},
 				{
 					"name": "delete category image",
-					"id": "57b87446-2d57-4ce0-9a92-6f6f6208e9ff",
+					"id": "f5766da5-c824-4fcf-b148-eb56413305a0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1575,7 +1587,9 @@
 								{
 									"key": "brand_img",
 									"type": "file",
-									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+									"src": [
+										"/C:/Users/belal/Pictures/restored/bfcai.png"
+									]
 								}
 							]
 						},
@@ -1599,7 +1613,7 @@
 				},
 				{
 					"name": "delete categories",
-					"id": "ea87d0fa-157f-43a6-8934-40903d60a9ab",
+					"id": "d5856f00-c439-4408-84b2-eaed1c7509da",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1634,7 +1648,7 @@
 				},
 				{
 					"name": "change categories status",
-					"id": "3eedac1b-2289-4285-b328-88ccb1b48939",
+					"id": "489393c4-013f-4c24-b4a1-e10216cb2679",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -1668,12 +1682,12 @@
 					"response": []
 				}
 			],
-			"id": "4c1fa4d4-a62f-4d6f-945c-2eac1e3f3cb7",
+			"id": "e8f25fdb-0356-46b5-8d4c-3ec2ac08148e",
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "4ac12103-7f31-4e89-b430-52893a7ea651",
+						"id": "a6622ff2-472f-4f2a-90f7-f4bbb132b378",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1683,7 +1697,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b472747e-cd62-4966-9020-f728cb784232",
+						"id": "c17489e5-5a37-44ef-b801-de3725c47b93",
 						"type": "text/javascript",
 						"exec": [
 							""

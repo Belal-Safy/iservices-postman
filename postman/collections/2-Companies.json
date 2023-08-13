@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "57e75e7a-8b8b-4afd-a78b-d44aad0060c0",
+		"_postman_id": "2b099b49-739d-4221-a8db-126f43d26fc9",
 		"name": "2-Companies",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "28168267-57e75e7a-8b8b-4afd-a78b-d44aad0060c0"
+		"_uid": "28168267-2b099b49-739d-4221-a8db-126f43d26fc9"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "login",
-					"id": "1ef26ce0-740e-4efd-b53d-7f9f13ee9267",
+					"id": "31d9cde3-f7ed-4caf-943c-994ab53f0071",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -51,7 +51,7 @@
 				},
 				{
 					"name": "me",
-					"id": "5133cd6a-0043-4bb4-8150-3dcf500100ea",
+					"id": "3b58600b-de4f-4a63-bdf5-e73f3d877b70",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -83,7 +83,7 @@
 				},
 				{
 					"name": "logout",
-					"id": "87ae340a-4cfd-42ee-a09b-ed84329fd856",
+					"id": "d5286a6a-9a2d-442b-b7d2-7a0b1a77e3e8",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -120,7 +120,7 @@
 				},
 				{
 					"name": "refresh-token",
-					"id": "974b365c-96a3-4bdc-aabc-d31a835b618f",
+					"id": "7efdcea6-169c-4630-a2b5-677c11a5e71a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -163,7 +163,7 @@
 				},
 				{
 					"name": "change-password",
-					"id": "e228ea54-caf2-4c09-95f6-9d10d9460505",
+					"id": "8cca757e-15a5-413d-98c4-f893dd4067f1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -206,7 +206,7 @@
 				},
 				{
 					"name": "send-password-reset-token",
-					"id": "b2ff4160-6a1b-415b-95cb-e4aacdc2fe96",
+					"id": "8d6be87d-460f-46f9-a35b-307b7dc12bdc",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -244,7 +244,7 @@
 				},
 				{
 					"name": "check-password-reset-token",
-					"id": "53b03be5-4341-4e46-beb2-2a679f5c3652",
+					"id": "d08dff20-2f86-403b-b00d-359e6617b7b0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -281,7 +281,7 @@
 				},
 				{
 					"name": "reset-password",
-					"id": "089639f5-abd4-44fd-9762-c56848b5c709",
+					"id": "2291ee44-61ec-44e7-9044-64fa0cb9ed41",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -318,7 +318,7 @@
 				},
 				{
 					"name": "is authenticated",
-					"id": "29529b21-6bbf-41ff-94a3-23ab2fdedddb",
+					"id": "f0fe42c5-d741-4af6-a153-6fdb135394f0",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -346,7 +346,7 @@
 					"response": []
 				}
 			],
-			"id": "7b961ea7-82a7-42b8-bbcf-b8166a9f0b4c"
+			"id": "06809ba9-10fb-4f25-b63d-135f51708dac"
 		}
 	]
 }

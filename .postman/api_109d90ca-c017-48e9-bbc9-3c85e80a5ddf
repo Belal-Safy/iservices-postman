@@ -11,7 +11,7 @@ id = 109d90ca-c017-48e9-bbc9-3c85e80a5ddf
 rootDirectory = postman/collections
 files[] = {"id":"28168267-b6ddd7a5-2aad-4a26-bdd6-5bb27cd67af3","path":"1-Control Panel.json","metaData":{}}
 files[] = {"id":"28168267-2b099b49-739d-4221-a8db-126f43d26fc9","path":"2-Companies.json","metaData":{}}
-files[] = {"id":"28168267-daa9f329-a6db-460e-b812-cb89b7c77b55","path":"3-Users.json","metaData":{}}
+files[] = {"id":"28168267-18dd85a7-e52f-4ae7-8bca-c11259fa7718","path":"3-Users.json","metaData":{}}
 
 [config.relations.collections.metaData]
 

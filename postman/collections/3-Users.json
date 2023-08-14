@@ -1,9 +1,9 @@
 {
 	"info": {
-		"_postman_id": "daa9f329-a6db-460e-b812-cb89b7c77b55",
+		"_postman_id": "18dd85a7-e52f-4ae7-8bca-c11259fa7718",
 		"name": "3-Users",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_uid": "28168267-daa9f329-a6db-460e-b812-cb89b7c77b55"
+		"_uid": "28168267-18dd85a7-e52f-4ae7-8bca-c11259fa7718"
 	},
 	"item": [
 		{
@@ -11,7 +11,7 @@
 			"item": [
 				{
 					"name": "login",
-					"id": "0bd5df3a-2e91-481a-987b-be3ef6c821df",
+					"id": "e0729944-d19b-4e96-ae44-70d5dbc10aac",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -51,7 +51,7 @@
 				},
 				{
 					"name": "signup",
-					"id": "ca05becf-e76c-4440-a3e7-c60099e8c38c",
+					"id": "94cd2e69-952f-48d8-9d39-7068ffe7be04",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -106,7 +106,7 @@
 				},
 				{
 					"name": "logout",
-					"id": "f9077800-20ed-4cf8-a3a7-bc8e2e17b802",
+					"id": "3d057ea0-ccc9-42ec-a81b-3d9d02bb8e6c",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -140,7 +140,7 @@
 				},
 				{
 					"name": "refresh-token",
-					"id": "f17f1127-4401-4977-8951-05d4255ea4ce",
+					"id": "4e4c9c5d-a57e-415c-84d0-66f2de6c3bf1",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -180,7 +180,7 @@
 				},
 				{
 					"name": "send-password-reset-token",
-					"id": "051cac0e-cae0-4cd8-b65b-491f7b58aa6f",
+					"id": "c7335206-03e1-440a-a8af-12ff9e162505",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -215,7 +215,7 @@
 				},
 				{
 					"name": "check-password-reset-token",
-					"id": "229630d7-2587-4d46-ab23-a2c1e3f7da30",
+					"id": "1ceb565f-6af5-46ae-8c66-459a6ea35467",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -249,7 +249,7 @@
 				},
 				{
 					"name": "reset-password",
-					"id": "8ba22df9-4657-4baf-a0cd-b6cf00646a90",
+					"id": "c753e455-503f-43fe-9259-80fde04c4f64",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -283,7 +283,7 @@
 				},
 				{
 					"name": "is authenticated",
-					"id": "5b6d0e3d-ddf1-442e-8d7d-45815f747158",
+					"id": "a1edbc8b-2a6a-4a28-b225-dad1ecf7f0bd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -311,14 +311,14 @@
 					"response": []
 				}
 			],
-			"id": "e7d4e579-ccdc-4c36-aafe-2bc7ea52de9f"
+			"id": "fa217b46-c607-4a9d-8d7f-b086d64096fd"
 		},
 		{
 			"name": "User Profile",
 			"item": [
 				{
 					"name": "me",
-					"id": "190507a9-e8dc-406c-a21d-683aeff3d7d0",
+					"id": "007eee51-7283-4c5b-8a7a-c46996c92196",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -347,7 +347,7 @@
 				},
 				{
 					"name": "change-password",
-					"id": "5c90f4e2-3ffc-4356-91a7-957f46031dfc",
+					"id": "25a65ef4-fd0f-4ec6-858d-8d9d414249a2",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -387,7 +387,7 @@
 				},
 				{
 					"name": "update user info",
-					"id": "924e2259-714c-4aef-bbb2-6265f37518b9",
+					"id": "a033fa81-c521-434a-9a09-b60911d4f02d",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -416,7 +416,7 @@
 				},
 				{
 					"name": "update profile image",
-					"id": "721e1820-7de5-4d8f-9e58-57a05188beee",
+					"id": "6d11b44e-ae0c-4ad0-a4d0-2bc89e6aa7b6",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -429,9 +429,7 @@
 								{
 									"key": "user_img",
 									"type": "file",
-									"src": [
-										"/C:/Users/belal/Pictures/restored/IMG_20220210_001029.jpg"
-									]
+									"src": "/C:/Users/belal/Pictures/restored/IMG_20220210_001029.jpg"
 								}
 							]
 						},
@@ -453,7 +451,7 @@
 				},
 				{
 					"name": "delete  profile image",
-					"id": "455fcbfb-c01c-4c55-afb0-3bc40ff1516e",
+					"id": "0a554298-ae3a-4504-82ab-b0ce70b2cddd",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -481,7 +479,92 @@
 					"response": []
 				}
 			],
-			"id": "8f908259-0a0c-4fa5-9334-025dbd5c09ba"
+			"id": "c650a649-d24a-4193-9210-d38a2886bce9"
+		},
+		{
+			"name": "Oreder process",
+			"item": [
+				{
+					"name": "get all categories",
+					"id": "6bcba61d-0a87-440e-8c88-bccfe034ee3c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"order-process",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get category subcategories",
+					"id": "416f2784-9098-4439-9667-c320e30e1c34",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories/1/subcategories",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"order-process",
+								"categories",
+								"1",
+								"subcategories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get subcategory services",
+					"id": "b697c4a9-5d8f-4cbd-b00e-06e660b4a92c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories/1/subcategories",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"order-process",
+								"categories",
+								"1",
+								"subcategories"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "c6159778-5b09-4f6a-bc9a-8901a56fb8b3"
 		}
 	],
 	"auth": {
@@ -489,7 +572,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTE3NzQwNDAsImV4cCI6MTY5MjM3ODg0MCwibmJmIjoxNjkxNzc0MDQwLCJqdGkiOiJrUFhCcUdLWGg4Z1VFZlJqIiwic3ViIjoiMyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.8bIBEJnQieRZa2fRR08dUOrByx7eamKKYG73fw-v5jI",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTIwMjU5NzEsImV4cCI6MTY5MjAyNjIxMSwibmJmIjoxNjkyMDI1OTcxLCJqdGkiOiJhOGowVUFCdXUycmg1bEE0Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YvEfEOVVpuc2pgQjH_t9-vlH-Zg8Ol371QbN-1tUflc",
 				"type": "string"
 			}
 		]
@@ -498,7 +581,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "60cd1262-3e65-4fa9-b1d9-3b17453c5e93",
+				"id": "a8551e44-343f-4a7a-9835-851b7d626bff",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -508,7 +591,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "04182dad-4694-443c-901b-fe115afca10e",
+				"id": "85986934-c499-4123-ba5c-24099d2376ff",
 				"type": "text/javascript",
 				"exec": [
 					""

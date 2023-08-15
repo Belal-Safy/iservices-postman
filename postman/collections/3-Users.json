@@ -519,7 +519,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories/1/subcategories",
+							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories/4/subcategories",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -529,7 +529,7 @@
 								"users",
 								"order-process",
 								"categories",
-								"1",
+								"4",
 								"subcategories"
 							]
 						}
@@ -546,7 +546,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories/1/subcategories",
+							"raw": "{{protocol}}://{{host}}/api/users/order-process/subcategories/3/services",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -555,9 +555,34 @@
 								"api",
 								"users",
 								"order-process",
-								"categories",
-								"1",
-								"subcategories"
+								"subcategories",
+								"3",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get regions",
+					"id": "de64f4f1-a25a-4dbd-bc5d-924637177603",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/order-process/regions",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"order-process",
+								"regions"
 							]
 						}
 					},
@@ -572,7 +597,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTIwMjU5NzEsImV4cCI6MTY5MjAyNjIxMSwibmJmIjoxNjkyMDI1OTcxLCJqdGkiOiJhOGowVUFCdXUycmg1bEE0Iiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.YvEfEOVVpuc2pgQjH_t9-vlH-Zg8Ol371QbN-1tUflc",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTIwNTU5NDEsImV4cCI6MTY5MjY2MDc0MSwibmJmIjoxNjkyMDU1OTQxLCJqdGkiOiJpN294elpkTGVxYUIxMk9pIiwic3ViIjoiMiIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ct4mOtGI-eM5VM2RmonXdmTKd5GRs6mIAgaq8CuCJZ8",
 				"type": "string"
 			}
 		]
@@ -581,7 +606,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "a8551e44-343f-4a7a-9835-851b7d626bff",
+				"id": "7cde679c-5a4c-40c3-8457-77671741b102",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -591,7 +616,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "85986934-c499-4123-ba5c-24099d2376ff",
+				"id": "7193ba94-de49-4cd6-80a5-659de6ac71a1",
 				"type": "text/javascript",
 				"exec": [
 					""

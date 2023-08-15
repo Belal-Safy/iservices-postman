@@ -441,39 +441,13 @@
 							}
 						],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "company_name_ar",
-									"value": "القحطاني2",
-									"type": "text"
-								},
-								{
-									"key": "company_name_en",
-									"value": "Al-Qahtani2",
-									"type": "text"
-								},
-								{
-									"key": "email",
-									"value": "qahtani155@gmail.com",
-									"type": "text"
-								},
-								{
-									"key": "password",
-									"value": "Aa12345#",
-									"type": "text"
-								},
-								{
-									"key": "phone",
-									"value": "505050505050",
-									"type": "text"
-								},
-								{
-									"key": "telephone",
-									"value": "44444444444",
-									"type": "text"
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"das@ddsdsasfs.co\",\r\n    \"password\":\"Scasd55@\",\r\n    \"company_name_ar\":\"fdfdfllast\",\r\n    \"company_name_en\":\"fdfdfdlast\",\r\n    \"phone\":\"77777\",\r\n    \"telephone\":\"5757\",\r\n    \"subcategories\": [3],\r\n    \"regions\": [2,3,4]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
 							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/add-company",
@@ -503,7 +477,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"phone\":\"010101010110\",\r\n    \"telephone\":\"011348\",\r\n    \"email\":\"qahtansai@gmail.com\"\r\n}",
+							"raw": "{\r\n    \"phone\":\"010101010110\",\r\n    \"telephone\":\"011348\",\r\n    \"email\":\"qahtansai@gmail.com\",\r\n    \"subcategories\":[3]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -529,6 +503,78 @@
 					"response": []
 				},
 				{
+					"name": "update company services price",
+					"id": "15c51fe1-e3a7-4e53-baf1-81415d631a2a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[3,3,4],\r\n    \"price\": 1022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-services-price",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-services-price"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company services discount",
+					"id": "77404569-2d4d-4c60-a14e-88f050cf1bbc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[3,3,4],\r\n    \"discount\": -2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-services-discount",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-services-discount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "update company image",
 					"id": "01f05d9d-da15-4ec1-8e48-9c277ee967da",
 					"protocolProfileBehavior": {
@@ -543,9 +589,7 @@
 								{
 									"key": "company_img",
 									"type": "file",
-									"src": [
-										"/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
-									]
+									"src": "/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
 								}
 							]
 						},
@@ -582,9 +626,7 @@
 								{
 									"key": "brand_img",
 									"type": "file",
-									"src": [
-										"/C:/Users/belal/Pictures/restored/bfcai.png"
-									]
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
 								}
 							]
 						},
@@ -762,7 +804,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/services/3",
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/services/2",
 									"protocol": "{{protocol}}",
 									"host": [
 										"{{host}}"
@@ -772,9 +814,9 @@
 										"control-panel",
 										"manage",
 										"categories",
-										"7",
+										"2",
 										"services",
-										"3"
+										"2"
 									]
 								}
 							},
@@ -806,7 +848,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/services/add-service",
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/services/add-service",
 									"protocol": "{{protocol}}",
 									"host": [
 										"{{host}}"
@@ -816,7 +858,7 @@
 										"control-panel",
 										"manage",
 										"categories",
-										"7",
+										"2",
 										"services",
 										"add-service"
 									]
@@ -877,9 +919,7 @@
 										{
 											"key": "service_img",
 											"type": "file",
-											"src": [
-												"/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
-											]
+											"src": "/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
 										}
 									]
 								},
@@ -1093,7 +1133,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/subcategories/30",
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/subcategories/2",
 									"protocol": "{{protocol}}",
 									"host": [
 										"{{host}}"
@@ -1103,9 +1143,9 @@
 										"control-panel",
 										"manage",
 										"categories",
-										"7",
+										"2",
 										"subcategories",
-										"30"
+										"2"
 									]
 								}
 							},
@@ -1128,28 +1168,16 @@
 									}
 								],
 								"body": {
-									"mode": "formdata",
-									"formdata": [
-										{
-											"key": "subcategory_name_ar",
-											"value": "aararar",
-											"type": "text"
-										},
-										{
-											"key": "subcategory_name_en",
-											"value": "enenen",
-											"type": "text"
-										},
-										{
-											"key": "services[]",
-											"value": "",
-											"type": "text",
-											"disabled": true
+									"mode": "raw",
+									"raw": "{\r\n    \"subcategory_name_ar\":\"صنابير\",\r\n    \"subcategory_name_en\":\"faucets\",\r\n    \"services\":[3]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
 										}
-									]
+									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/add-subcategory",
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/subcategories/add-subcategory",
 									"protocol": "{{protocol}}",
 									"host": [
 										"{{host}}"
@@ -1159,7 +1187,7 @@
 										"control-panel",
 										"manage",
 										"categories",
-										"1",
+										"2",
 										"subcategories",
 										"add-subcategory"
 									]
@@ -1178,7 +1206,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"subcategory_name_ar\":\"02451021\",\r\n    \"subcategory_name_en\":\"011348\",\r\n    \"services\":[]\r\n}",
+									"raw": "{\r\n    \"subcategory_name_ar\":\"02451021\",\r\n    \"subcategory_name_en\":\"011348\",\r\n    \"services\":[3]\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -1186,7 +1214,7 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/subcategories/31/update-info",
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/4/subcategories/7/update-info",
 									"protocol": "{{protocol}}",
 									"host": [
 										"{{host}}"
@@ -1196,9 +1224,9 @@
 										"control-panel",
 										"manage",
 										"categories",
-										"7",
+										"4",
 										"subcategories",
-										"31",
+										"7",
 										"update-info"
 									]
 								}
@@ -1220,9 +1248,7 @@
 										{
 											"key": "subcategory_img",
 											"type": "file",
-											"src": [
-												"/C:/Users/belal/Pictures/restored/IMG_20210611_150755.png"
-											]
+											"src": "/C:/Users/belal/Pictures/restored/IMG_20210611_150755.png"
 										}
 									]
 								},
@@ -1261,9 +1287,7 @@
 										{
 											"key": "brand_img",
 											"type": "file",
-											"src": [
-												"/C:/Users/belal/Pictures/restored/bfcai.png"
-											]
+											"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
 										}
 									]
 								},
@@ -1548,9 +1572,7 @@
 								{
 									"key": "category_img",
 									"type": "file",
-									"src": [
-										"/C:/Users/belal/Pictures/restored/Picture2.png"
-									]
+									"src": "/C:/Users/belal/Pictures/restored/Picture2.png"
 								}
 							]
 						},
@@ -1587,9 +1609,7 @@
 								{
 									"key": "brand_img",
 									"type": "file",
-									"src": [
-										"/C:/Users/belal/Pictures/restored/bfcai.png"
-									]
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
 								}
 							]
 						},
@@ -1705,6 +1725,78 @@
 					}
 				}
 			]
+		},
+		{
+			"name": "analytics",
+			"item": [
+				{
+					"name": "tables count",
+					"id": "69dfb05c-cd42-4990-bbb1-9ddd25558948",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/analytics/tables-count",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"analytics",
+								"tables-count"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "b453467a-bb59-421f-afd7-645effd269bb"
+		},
+		{
+			"name": "Manage Regions",
+			"item": [
+				{
+					"name": "get all regions",
+					"id": "1d6f0077-02b6-498c-96b9-255951efb38c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/regions/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"regions",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "3169fd1b-323a-407a-a382-2da67865275f"
 		}
 	]
 }

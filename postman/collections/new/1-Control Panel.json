@@ -1,0 +1,2774 @@
+{
+	"info": {
+		"_postman_id": "f96baec3-8b19-4519-bd02-b3da5d389dde",
+		"name": "1-Control Panel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28168267-f96baec3-8b19-4519-bd02-b3da5d389dde"
+	},
+	"item": [
+		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "get all notifications",
+					"id": "c67df610-b65c-4963-93d0-b7edf60fec19",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get unread notifications count",
+					"id": "2fdd63a6-f956-4d78-a0c2-3bd36302fb74",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications/unread-count",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"notifications",
+								"unread-count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark all as read",
+					"id": "d8a1b9c1-d8b8-494a-968d-cfe464802fc3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications/mark-all-as-read",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"notifications",
+								"mark-all-as-read"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "fd49af1c-d0b8-4087-8b3d-ae4ee0e57e55",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "2c14e281-c79f-4589-9b5d-6bb4a2b50317",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "05e50095-aa9c-44fd-93e8-e9d537a38196",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Cp User Auth",
+			"item": [
+				{
+					"name": "login",
+					"id": "7b1c1b77-12eb-4b4c-b6d7-1ad46d221af9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal.aglan6@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "Aa12345!",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/login",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "me",
+					"id": "8715af43-a154-45ad-8012-2605910f5fa1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/me",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"id": "2669b028-dcb6-4a6b-b84b-f660c9f1de48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/logout",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-token",
+					"id": "d4bb7e2c-184b-4563-ac58-655ac9fd1a43",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal2@gmail.com",
+									"type": "default"
+								},
+								{
+									"key": "password",
+									"value": "123",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/refresh-token",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change-password",
+					"id": "80a37638-3496-4dbf-8500-69e84427ad2e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "content-lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"old_password\": \"Bb12345#\",\r\n    \"new_password\": \"Bb12345!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/change-password",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"change-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "is authenticated",
+					"id": "53edbd9a-0ddd-4201-966a-f5044cf23569",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/is-authenticated",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"is-authenticated"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send-password-reset-token",
+					"id": "e49c0fc7-b4a3-4cba-8cac-0099269a70a3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "belal.aglan2@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/send-password-reset-token",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"send-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "check-password-reset-token",
+					"id": "a2ac8e3c-3cc6-40bd-8bd5-f3aba43b0727",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"tL82gEUCfo8sdf2ZeuDWSp9X4joQ282pVt0E9wkItxdfB5Yl8l9St3Pspz4t\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/check-password-reset-token",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"check-password-reset-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"id": "e55b4495-5663-46a5-a7ad-8937e9136b48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\":\"tL82gEUCfo8sdf2ZeuDWSp9X4joQ282pVt0E9wkItxdfB5Yl8l9St3Pspz4t \",\r\n    \"new_password\": \"Bb12345!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/reset-password",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"reset-password"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "36993dad-cc95-45a1-81f5-ace788d6a104"
+		},
+		{
+			"name": "Manage Companies",
+			"item": [
+				{
+					"name": "get all companies",
+					"id": "8d3bf11c-b88e-4f02-8df0-5d3878872fbd",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get company",
+					"id": "f925fbc7-6bd1-4158-9eeb-93df5f169ccc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/14",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add company",
+					"id": "e38e9398-b18e-439a-a723-2f34771724e8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"tttttyy@ptlfff.t\",\r\n    \"password\":\"Scadsd55@\",\r\n    \"company_name_ar\":\"تتتتتتتتت\",\r\n    \"company_name_en\":\"ttttttttttt\",\r\n    \"phone\":\"9999999999\",\r\n    \"telephone\":\"888888888\",\r\n    \"subcategories\": [13],\r\n    \"regions\": [2,3,4]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/add-company",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"add-company"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company info",
+					"id": "42a847ac-e612-49c9-8ba8-1ea88951a021",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\":\"010101010110\",\r\n    \"telephone\":\"011348\",\r\n    \"email\":\"qfdsahtansai@gmail.com\",\r\n    \"subcategories\":[5],\r\n    \"regions\": [2,5,6]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/13/update-info",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"13",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company services price",
+					"id": "1a354c3b-9414-4581-ac9f-a30d82bb88b7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[3,3,4],\r\n    \"price\": 1022\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-services-price",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-services-price"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company services discount",
+					"id": "7ca43fa6-2f42-44b5-8d48-8b897b49d454",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[3,3,4],\r\n    \"discount\": -2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-services-discount",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-services-discount"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update company image",
+					"id": "125827ca-1215-4f82-b16c-6466afa58af0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "company_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-image",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"update-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete company image",
+					"id": "4dba3e19-877f-46d7-95d9-153ca9cd77b1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/delete-image",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"delete-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete companies",
+					"id": "b886a323-7f88-45da-bcc5-b24ee1b48f48",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[5]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/delete",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change companies status",
+					"id": "0a6d768f-37d4-4178-b632-743223d6d07d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1],\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/change-status",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d22efd4a-4505-4062-acf7-18efe81dae1c",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b72725d6-7eab-44f5-9597-b4938a4d141b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf258864-8339-435e-8cb1-ec74de6ebbee",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Manage Users",
+			"item": [
+				{
+					"name": "get user",
+					"id": "6bda2923-abf1-49ed-b7a8-c0454156df24",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/users/1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search users",
+					"id": "536126a0-4110-434d-9a10-fb5117286f91",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/users/search?q=ahmed&l=4",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"users",
+								"search"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "ahmed"
+								},
+								{
+									"key": "l",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change companies status",
+					"id": "431dc17a-9873-47c7-a39c-0ab86a874532",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1],\r\n    \"status\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/users/change-status",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"users",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "742ea759-066f-4988-ba20-85fb8e4ff24f",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "b72725d6-7eab-44f5-9597-b4938a4d141b",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf258864-8339-435e-8cb1-ec74de6ebbee",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Manage Categories",
+			"item": [
+				{
+					"name": "Manage Services",
+					"item": [
+						{
+							"name": "get all services",
+							"id": "3b2a6f33-fa75-4cc6-bd93-34a8bc013f8f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/services",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"7",
+										"services"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get service",
+							"id": "5b2656a5-e5df-48a5-a969-dcee1e869614",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/services/2",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"2",
+										"services",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add service",
+							"id": "6832bd37-c1bb-4485-b144-b8ab615b9e0f",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-lang",
+										"value": "ar",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"service_name_en\":\"2dasdasd\",\r\n    \"service_name_ar\":\"2تصليح تسري\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/services/add-service",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"2",
+										"services",
+										"add-service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update service info",
+							"id": "ef66fd21-cae4-44f4-97ed-0ea60a1d4dbc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"service_name_ar\":\"02451021\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/2/update-info",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"services",
+										"2",
+										"update-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update service image",
+							"id": "d194787c-4dcd-438f-bcdb-9eb0d240726e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "service_img",
+											"type": "file",
+											"src": "/C:/Users/belal/Pictures/restored/FB_IMG_1605448639413.jpg"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/3/update-image",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"services",
+										"3",
+										"update-image"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete service image",
+							"id": "246b7691-acb5-4d2d-97eb-a517f1714083",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/2/delete-image",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"services",
+										"2",
+										"delete-image"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete service",
+							"id": "56dd9649-9661-444f-9ea9-6b28c292fd2b",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[2]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/delete",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"services",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "change services status",
+							"id": "82829ec9-d83d-44b4-aa38-3b267f427b1a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[1,3],\r\n    \"status\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/change-status",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"services",
+										"change-status"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "eef11c3c-f8d5-489b-97b8-3b081665daa3",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "bb66c86c-16e3-4e4f-a26d-85aea123b6a4",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "73aba667-fbaa-41b1-a462-247cc67f2805",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Manage Subategories",
+					"item": [
+						{
+							"name": "get all subcategories",
+							"id": "69f63906-376c-421d-bbfc-20fbcdde88bc",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/subcategories/get-all",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"subcategories",
+										"get-all"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get subcategory",
+							"id": "fa45118a-f3aa-4869-a98d-1504947cde22",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/subcategories/2",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"2",
+										"subcategories",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "add subcategory",
+							"id": "357a2cc8-929f-49be-b154-842c0254d47c",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-lang",
+										"value": "ar",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"subcategory_name_ar\":\"صنابير\",\r\n    \"subcategory_name_en\":\"faucets\",\r\n    \"services\":[3]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/subcategories/add-subcategory",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"2",
+										"subcategories",
+										"add-subcategory"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update subcategory info",
+							"id": "e2e34a34-0dde-4413-a840-1d3bfdac7881",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"subcategory_name_ar\":\"02451021\",\r\n    \"subcategory_name_en\":\"011348\",\r\n    \"services\":[3]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/4/subcategories/7/update-info",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"4",
+										"subcategories",
+										"7",
+										"update-info"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update subcategory image",
+							"id": "16a66758-c916-4c20-9016-097067d3241e",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "subcategory_img",
+											"type": "file",
+											"src": "/C:/Users/belal/Pictures/restored/IMG_20210611_150755.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/subcategories/30/update-image",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"7",
+										"subcategories",
+										"30",
+										"update-image"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete subcategory image",
+							"id": "d1befabe-e6e8-4d50-aa1b-33376644d0b1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "brand_img",
+											"type": "file",
+											"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/1/delete-image",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"subcategories",
+										"1",
+										"delete-image"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete subcategories",
+							"id": "79a2a258-98b3-4b55-9aa8-733c63138c59",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[2]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/delete",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"subcategories",
+										"delete"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "change subcategories status",
+							"id": "c765d70f-2e12-4ba1-b537-3ae6838011e1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"ids\":[1,2],\r\n    \"status\": false\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/change-status",
+									"protocol": "{{protocol}}",
+									"host": [
+										"{{host}}"
+									],
+									"path": [
+										"api",
+										"control-panel",
+										"manage",
+										"categories",
+										"1",
+										"subcategories",
+										"change-status"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"id": "80e4ea4a-24e6-4ca1-844a-3756da49e1f1",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"id": "64cf28dd-2905-47f4-bc5e-4f928226464d",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"id": "e451725b-95a7-454a-9c1a-677cab03d7aa",
+								"type": "text/javascript",
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "get all categories",
+					"id": "ad6c1ed0-4b64-409b-ba4f-39b5b664202d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get category",
+					"id": "68947fa3-f43f-4f03-b27e-d3651644058f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add category",
+					"id": "2cb0482a-3ae6-44ba-88d6-c880dd9b3b5a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name_en\":\"plumbingسشسسشس\",\r\n    \"category_name_ar\":\"سشسسباكة\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/add-category",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"add-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category info",
+					"id": "0991ae8f-c97f-401d-b3a4-2d527aa2ecab",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name_ar\":\"سباكه\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/update-info",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"1",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update category image",
+					"id": "e71f3d47-7a82-4eed-8ef0-ac72767c20b6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/Picture2.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/update-image",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"1",
+								"update-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete category image",
+					"id": "2bc15082-2682-4e98-9903-6b6adb0737c1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "brand_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/restored/bfcai.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/delete-image",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"1",
+								"delete-image"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete categories",
+					"id": "132e833c-2d0f-4c0a-9ba5-2a95f9a44966",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[2]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/delete",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change categories status",
+					"id": "11702285-6559-4de2-8fd1-a0f487954bba",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1,2],\r\n    \"status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/change-status",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"categories",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "fbe16b1d-4305-4b09-909e-7ef3e1033a56",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6273a964-af06-42a7-9326-44b430f3a19c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "2e8d4958-9756-4b98-970b-8f8b5a8f813a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Reports",
+			"item": [
+				{
+					"name": "tables count",
+					"id": "03abbff6-6ee1-4652-afdd-d7d88c354cc6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/tables-records-count",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"reports",
+								"tables-records-count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "main report",
+					"id": "e53415a4-ee24-4fb4-ac71-798767eb5f7f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/main-report?start_datetime=2022-09-10 17:49:37&end_datetime=2023-09-10 17:49:37&interval=monthly",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"reports",
+								"main-report"
+							],
+							"query": [
+								{
+									"key": "start_datetime",
+									"value": "2022-09-10 17:49:37"
+								},
+								{
+									"key": "end_datetime",
+									"value": "2023-09-10 17:49:37"
+								},
+								{
+									"key": "interval",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "265af06a-f605-49ae-906b-fb1c54e4f891"
+		},
+		{
+			"name": "Manage Notifications",
+			"item": [
+				{
+					"name": "get notifications processes",
+					"id": "23b13009-31ec-4799-9ff8-aabac34c767e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/notifications/get-manual-notifications",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"notifications",
+								"get-manual-notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "send notification to users",
+					"id": "a8e22c70-276c-4497-b9d9-1c4ebd095701",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title_ar",
+									"value": "عنوان الإشعار باللغة العربية",
+									"type": "text"
+								},
+								{
+									"key": "title_en",
+									"value": "Notification title in English",
+									"type": "text"
+								},
+								{
+									"key": "body_ar",
+									"value": "هيئة الإشعار باللغة العربية",
+									"type": "text"
+								},
+								{
+									"key": "body_en",
+									"value": "Notification body in English",
+									"type": "text"
+								},
+								{
+									"key": "context",
+									"value": "inform",
+									"type": "text"
+								},
+								{
+									"key": "notification_img",
+									"type": "file",
+									"fileNotInWorkingDirectoryWarning": "This file isn't in your working directory. Teammates you share this request with won't be able to use this file. To make collaboration easier you can setup your working directory in Settings.",
+									"src": "/C:/Users/belal/Pictures/3-02.jpg",
+									"disabled": true
+								},
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications/send-notification-to-users",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"notifications",
+								"send-notification-to-users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d6557e31-e6e9-447c-a157-6a8512448681"
+		},
+		{
+			"name": "Manage Regions",
+			"item": [
+				{
+					"name": "get all regions",
+					"id": "73254b8c-2c9f-440f-8a01-5fe727baa958",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/regions/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"regions",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "9e92bd8c-3839-4d83-aaae-53cf42e39d66"
+		},
+		{
+			"name": "Manage Banners",
+			"item": [
+				{
+					"name": "get all banners",
+					"id": "bc01cb5b-ce0f-4e75-8dec-41336f886ac7",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"banners",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add banner",
+					"id": "a3673215-4844-4711-a350-ef4c19722646",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "banner_img",
+									"type": "file",
+									"src": "/C:/Users/belal/Pictures/4k wallpaper/Saved Pictures/download.jpeg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"banners",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change banner index",
+					"id": "ef2f1e78-c4f0-4ddd-8c3f-52e93ca00e5d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"index\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/change-index/6",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"banners",
+								"change-index",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete banner",
+					"id": "7c46cb17-4946-42f8-bc4a-e790d9fa2098",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"banners",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2acf65e6-35d9-4c1b-b1b2-f57808f2f64a"
+		},
+		{
+			"name": "Manage Orders",
+			"item": [
+				{
+					"name": "get all orders",
+					"id": "36e253ce-0e0a-4272-9ece-4bec4ec330b4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content-lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order",
+					"id": "e079f33f-32be-469d-8ed6-482b241222e3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/35",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get  order transactions",
+					"id": "d4e20c8d-9e68-4fee-b4ab-4a597ec8d869",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/transactions",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"24",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add new transaction",
+					"id": "cde6b992-0d86-449d-9994-da025b8b7222",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"payment_method\":\"Visa\",\r\n    \"description\":\"refund\",\r\n    \"amount\":-50.45,\r\n    \"gateway_payment_id\":\"888898559\",\r\n    \"timestamp\":\"2023-09-01 14:49:08\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/transactions",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"24",
+								"transactions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order refund",
+					"id": "9ccff028-62c4-4278-a0bd-5074ecceac31",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/25/get-refund-request",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"25",
+								"get-refund-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update order refund",
+					"id": "8bc531f5-1815-40fd-adce-1ee045ff3b71",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"status\":\"in reviewd\",\r\n    \"sys_comment\":\"nnnnnnnnnnnnnnnnnn\",\r\n    \"message\":\"mmmmm44m\",\r\n    \"money_back_at\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/25/update-refund",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"25",
+								"update-refund"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get cancel request",
+					"id": "060a1a05-15f5-4557-aa6f-6394b791660e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/get-cancel-request",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"24",
+								"get-cancel-request"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update order cancel",
+					"id": "e712eb05-af4f-4db8-9e23-327704617677",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"money_back_at\":\"2023-09-01 09:30:00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/update-cancel",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"24",
+								"update-cancel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all refund requests",
+					"id": "d74388d6-a98e-442e-8118-6d8fc3d54518",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content_lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/get-all-refund-requests",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"get-all-refund-requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all cancel requests",
+					"id": "c19f9b3d-ff16-4d5f-ae75-5e30b7d677e9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content_lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/get-all-cancel-requests",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"get-all-cancel-requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "requests need attention count",
+					"id": "8349ea8e-7409-4e11-b223-c1f1382e79ee",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "content_lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/requests-need-attention-count",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"orders",
+								"requests-need-attention-count"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "79ca9e53-187d-4317-a47f-ac4b90d5f838"
+		}
+	]
+}

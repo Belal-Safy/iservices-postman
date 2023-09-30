@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "49dd3da6-540c-44ce-bd03-85015c97a26a",
+		"name": "Node js Notifications",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_uid": "28168267-49dd3da6-540c-44ce-bd03-85015c97a26a"
+	},
+	"item": [
+		{
+			"name": "send notification  to all companies",
+			"id": "eb66b009-14f7-46f8-853f-400886a95a55",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title_ar\": \"عنوان الإخطار باللغة العربية\",\r\n        \"title_en\": \"Notification title in English\",\r\n        \"body_ar\":\"هيئة الإخطار باللغة العربية\",\r\n        \"body_en\":\"Notification body in English\",\r\n        \"context\":\"inform\",\r\n        \"img_url\": \"https://awfulannouncing.com/wp-content/uploads/sites/94/2018/04/IMG-logo.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.aqaralex.com/notifications-nodejs-app/api/notification/send/companies",
+					"protocol": "https",
+					"host": [
+						"services",
+						"aqaralex",
+						"com"
+					],
+					"path": [
+						"notifications-nodejs-app",
+						"api",
+						"notification",
+						"send",
+						"companies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send notification to a company",
+			"id": "265c744a-4e16-476d-a303-c1e79f32e98d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title_ar\": \"عنوان الإخطار باللغة العربية\",\r\n        \"title_en\": \"Notification title in English\",\r\n        \"body_ar\":\"هيئة الإخطار باللغة العربية\",\r\n        \"body_en\":\"Notification body in English\",\r\n        \"context\":\"inform\",\r\n        \"img_url\": \"https://awfulannouncing.com/wp-content/uploads/sites/94/2018/04/IMG-logo.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.aqaralex.com/notifications-nodejs-app/api/notification/send/companies/49564",
+					"protocol": "https",
+					"host": [
+						"services",
+						"aqaralex",
+						"com"
+					],
+					"path": [
+						"notifications-nodejs-app",
+						"api",
+						"notification",
+						"send",
+						"companies",
+						"49564"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send notification  to all users",
+			"id": "b3a91b40-a680-4552-a4e7-3ed72ee19683",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title_ar\": \"عنوان الإخطار باللغة العربية\",\r\n        \"title_en\": \"Notification title in English\",\r\n        \"body_ar\":\"هيئة الإخطار باللغة العربية\",\r\n        \"body_en\":\"Notification body in English\",\r\n        \"context\":\"inform\",\r\n        \"img_url\": \"https://awfulannouncing.com/wp-content/uploads/sites/94/2018/04/IMG-logo.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.aqaralex.com/notifications-nodejs-app/api/notification/send/users",
+					"protocol": "https",
+					"host": [
+						"services",
+						"aqaralex",
+						"com"
+					],
+					"path": [
+						"notifications-nodejs-app",
+						"api",
+						"notification",
+						"send",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "send notification to a user",
+			"id": "fc7cf4e9-68be-44c0-a0c8-cd6d49c7786e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title_ar\": \"عنوان الإخطار باللغة العربية\",\r\n        \"title_en\": \"Notification title in English\",\r\n        \"body_ar\": \"هيئة الإخطار باللغة العربية\",\r\n        \"body_en\": \"Notification body in English\",\r\n        \"context\": \"inform\",\r\n        \"img_url\": \"https://awfulannouncing.com/wp-content/uploads/sites/94/2018/04/IMG-logo.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.aqaralex.com/notifications-nodejs-app/api/notification/send/users/1",
+					"protocol": "https",
+					"host": [
+						"services",
+						"aqaralex",
+						"com"
+					],
+					"path": [
+						"notifications-nodejs-app",
+						"api",
+						"notification",
+						"send",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

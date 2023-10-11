@@ -137,12 +137,12 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "belal.aglan6@gmail.com",
+									"value": "belal.aglan3@gmail.com",
 									"type": "default"
 								},
 								{
 									"key": "password",
-									"value": "Aa12345!",
+									"value": "Bb12345!",
 									"type": "default"
 								}
 							]
@@ -190,6 +190,43 @@
 								"control-panel",
 								"auth",
 								"me"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"id": "dae4e74f-717a-4a5b-95bf-3637cd61251b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Belal\",\r\n    \"email\":\"ahmed.oem@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/update-user",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"auth",
+								"update-user"
 							]
 						}
 					},
@@ -2030,7 +2067,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/main-report?start_datetime=2022-09-10 17:49:37&end_datetime=2023-09-10 17:49:37&interval=monthly",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/main-report?start_datetime=2022-09-10 17:49:37&end_datetime=2023-12-10 17:49:37&interval=monthly",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2048,7 +2085,55 @@
 								},
 								{
 									"key": "end_datetime",
-									"value": "2023-09-10 17:49:37"
+									"value": "2023-12-10 17:49:37"
+								},
+								{
+									"key": "interval",
+									"value": "monthly"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "excel file",
+					"id": "95f2ec1d-4b15-496d-9a32-a218766b43d0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/export-excel-report?start_datetime=2023-09-27 19:16:10&end_datetime=2023-09-27 22:31:55&interval=monthly",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"reports",
+								"export-excel-report"
+							],
+							"query": [
+								{
+									"key": "start_datetime",
+									"value": "2023-09-27 19:16:10"
+								},
+								{
+									"key": "end_datetime",
+									"value": "2023-09-27 22:31:55"
 								},
 								{
 									"key": "interval",
@@ -2412,7 +2497,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/35",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/103",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2422,7 +2507,7 @@
 								"control-panel",
 								"manage",
 								"orders",
-								"35"
+								"103"
 							]
 						}
 					},

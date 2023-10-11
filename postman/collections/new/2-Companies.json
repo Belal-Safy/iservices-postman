@@ -454,7 +454,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/25",
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/32",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -463,7 +463,42 @@
 								"api",
 								"companies",
 								"orders",
-								"25"
+								"32"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order by id",
+					"id": "600b9fd4-ca13-4bae-9b61-68a1c280a4f1",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"day\": \"2023-10-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/search/32",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"companies",
+								"orders",
+								"search",
+								"32"
 							]
 						}
 					},
@@ -684,7 +719,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NlcnZpY2VzLmFxYXJhbGV4LmNvbS9iYWNrZW5kL3B1YmxpYy9hcGkvY29tcGFuaWVzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTU3MTUzMTcsImV4cCI6MTY5NjMyMDExNywibmJmIjoxNjk1NzE1MzE3LCJqdGkiOiJOQnJnSDdNYk1zaVlJVklyIiwic3ViIjoiMjUiLCJwcnYiOiJjZmU3ZWM5OWEyM2Y0Mzg4ZTdmMWQ1ZmI4NzA4Mzc1Yzg1NGVkYTY0In0.wqYRudxbvxG9nrotmIRC3yrup44Eqg1G_UgbPeboqvM",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbmllcy9hdXRoL2xvZ2luIiwiaWF0IjoxNjk2NjUxODcwLCJleHAiOjE2OTcyNTY2NzAsIm5iZiI6MTY5NjY1MTg3MCwianRpIjoidndxQWRUcENURDJVb1B3TiIsInN1YiI6IjI1IiwicHJ2IjoiY2ZlN2VjOTlhMjNmNDM4OGU3ZjFkNWZiODcwODM3NWM4NTRlZGE2NCJ9.wsd850jxmknh84MSLf6AyH1g92thfNTCXul9TZtKCcw",
 				"type": "string"
 			}
 		]
@@ -693,7 +728,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "bf4c49aa-9fe4-47dd-b6bb-cb86d0d8b170",
+				"id": "1db0c0bb-385d-4027-bb4b-11a11464a87f",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -703,7 +738,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "5a2416d5-4b02-4a81-9527-102303db45d7",
+				"id": "9eb8bdc5-badd-4273-89c7-27ead2184844",
 				"type": "text/javascript",
 				"exec": [
 					""

@@ -23,7 +23,7 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "belal.aglan2@gmail.com",
+									"value": "belal2@aqaralex.com",
 									"type": "default"
 								},
 								{
@@ -366,14 +366,42 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "get all categories",
+					"id": "a6b30858-276b-4c8e-967f-84cb5191d44b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/home/categories",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"home",
+								"categories"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "58914c7f-517f-4e22-b78d-c9fc78cde693",
+			"auth": {
+				"type": "noauth"
+			},
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "2c14e281-c79f-4589-9b5d-6bb4a2b50317",
+						"id": "21f0b5b4-4d1e-497a-9c30-81a1301450f7",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -383,7 +411,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "05e50095-aa9c-44fd-93e8-e9d537a38196",
+						"id": "55056118-4cbf-40a9-8876-525a6e2eb776",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -848,6 +876,40 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "delete user",
+					"id": "8e971d69-83d3-464e-b866-1673bc967ec0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"subcategory_id\":3,\r\n    \"region_id\":1,\r\n    \"services\":[\r\n        {\"subcategory_service_id\":43,\"quantity\":2},\r\n        {\"subcategory_service_id\":44,\"quantity\":3}\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/profile/delete-user",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"profile",
+								"delete-user"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "ba10c124-88ef-438d-a054-822ae8d49299",
@@ -856,7 +918,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NlcnZpY2VzLmFxYXJhbGV4LmNvbS9iYWNrZW5kL3B1YmxpYy9hcGkvdXNlcnMvYXV0aC9sb2dpbiIsImlhdCI6MTY5NTcwOTU5MCwiZXhwIjoxNjk2MzE0MzkwLCJuYmYiOjE2OTU3MDk1OTAsImp0aSI6IjNhUWZjSmVuMGtwYVRyTUMiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5PaiJxOpzoBoBoT1bXe0LBFekDbY0C-wTDY40yiQ05w",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTY4MjQ3NTIsImV4cCI6MTY5NzQyOTU1MiwibmJmIjoxNjk2ODI0NzUyLCJqdGkiOiJqekdkcUw2MHVCMmZqUFJ3Iiwic3ViIjoiNyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-BXj13Kq_9cNBabBa_Hy3HmwIhVW-mry6Ze-vh1zE1c",
 						"type": "string"
 					}
 				]
@@ -865,7 +927,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "3cf5b0e3-61a1-4a8a-9857-ee783ffcf2cf",
+						"id": "56ecbd1d-4f1c-417a-b3b3-cb12cbf64bf6",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -875,7 +937,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "338f15d1-3513-494c-8090-4ee5c82e3c1c",
+						"id": "bf64d4f2-0a12-4961-90bb-9b430fca48a0",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -922,7 +984,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/35",
+							"raw": "{{protocol}}://{{host}}/api/users/orders/32",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -931,7 +993,7 @@
 								"api",
 								"users",
 								"orders",
-								"35"
+								"32"
 							]
 						}
 					},
@@ -948,7 +1010,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"order_date\" : \"2023-08-31 16:00:00\"\r\n}",
+							"raw": "{\r\n    \"order_date\" : \"2023-10-10 17:00:00\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -956,7 +1018,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/11/change-date",
+							"raw": "{{protocol}}://{{host}}/api/users/orders/73/change-date",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -965,7 +1027,7 @@
 								"api",
 								"users",
 								"orders",
-								"11",
+								"73",
 								"change-date"
 							]
 						}
@@ -1073,7 +1135,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/33/refund",
+							"raw": "{{protocol}}://{{host}}/api/users/orders/42/refund",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -1082,7 +1144,7 @@
 								"api",
 								"users",
 								"orders",
-								"33",
+								"42",
 								"refund"
 							]
 						}
@@ -1196,7 +1258,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/50/add-services",
+							"raw": "{{protocol}}://{{host}}/api/users/orders/66/add-services",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -1205,7 +1267,7 @@
 								"api",
 								"users",
 								"orders",
-								"50",
+								"66",
 								"add-services"
 							]
 						}
@@ -1214,21 +1276,11 @@
 				}
 			],
 			"id": "37003c3d-2d52-4dc9-8b15-a17e3f8b66c5",
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL3NlcnZpY2VzLmFxYXJhbGV4LmNvbS9iYWNrZW5kL3B1YmxpYy9hcGkvdXNlcnMvYXV0aC9sb2dpbiIsImlhdCI6MTY5NTczNzU2NiwiZXhwIjoxNjk2MzQyMzY2LCJuYmYiOjE2OTU3Mzc1NjYsImp0aSI6Ik1sd3ZVYWl3UkVGR2Fyc0oiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.oUC369Tg3DhcTR-2mSlV3ahKhJPMOeGpB1eUVUBXXXg",
-						"type": "string"
-					}
-				]
-			},
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "51494822-864a-4a71-9d30-5076a02d87ab",
+						"id": "36fea10f-c908-4d1a-8e58-7ce05e825a8e",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1238,7 +1290,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "8182b54e-8928-488b-ad7a-49abc435d993",
+						"id": "2de4bad1-e35f-48be-8eec-544ffcb4609b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1250,31 +1302,6 @@
 		{
 			"name": "Oreder Process",
 			"item": [
-				{
-					"name": "get all categories",
-					"id": "a6b30858-276b-4c8e-967f-84cb5191d44b",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories",
-							"protocol": "{{protocol}}",
-							"host": [
-								"{{host}}"
-							],
-							"path": [
-								"api",
-								"users",
-								"order-process",
-								"categories"
-							]
-						}
-					},
-					"response": []
-				},
 				{
 					"name": "get category subcategories",
 					"id": "807020a4-f4ac-4f8e-b53d-11d2bc491a6a",
@@ -1467,7 +1494,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"region_id\" : 8,\r\n    \"company_id\" : 25,\r\n    \"category_id\" : 14,\r\n    \"subcategory_id\" : 15,\r\n    \"address_lat\" : \"30.033333\",\r\n    \"address_long\" : \"31.233334\",\r\n    \"address_city\" : \"Cairo\",\r\n    \"address_building_no\" : \"78\",\r\n    \"address_floor_no\" : \"44\",\r\n    \"address_flat_no\" : \"\",\r\n    \"address_details\" : \"\",\r\n    \"order_notes\" : \"no notes\",\r\n    \"order_date\" : \"2023-09-28 10:00:00\",\r\n    \"services\":[\r\n        {\"subcategory_service_id\":49, \"quantity\":2}\r\n    ]\r\n}",
+							"raw": "{\r\n    \"region_id\" : 8,\r\n    \"company_id\" : 25,\r\n    \"category_id\" : 2,\r\n    \"subcategory_id\" : 18,\r\n    \"address_lat\" : \"30.033333\",\r\n    \"address_long\" : \"31.233334\",\r\n    \"address_city\" : \"Cairo\",\r\n    \"address_building_no\" : \"78\",\r\n    \"address_floor_no\" : \"44\",\r\n    \"address_flat_no\" : \"\",\r\n    \"address_details\" : \"\",\r\n    \"order_notes\" : \"no notes\",\r\n    \"order_date\" : \"2023-10-28 10:00:00\",\r\n    \"services\":[\r\n        {\"subcategory_service_id\":53, \"quantity\":2}\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1507,7 +1534,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"region_id\" : 8,\r\n    \"company_id\" : 25,\r\n    \"category_id\" : 14,\r\n    \"subcategory_id\" : 15,\r\n    \"address_lat\" : \"30.033333\",\r\n    \"address_long\" : \"31.233334\",\r\n    \"address_city\" : \"Cairo\",\r\n    \"address_building_no\" : \"78\",\r\n    \"address_floor_no\" : \"44\",\r\n    \"address_flat_no\" : \"\",\r\n    \"address_details\" : \"\",\r\n    \"order_notes\" : \"no notes\",\r\n    \"order_date\" : \"2023-09-28 10:00:00\",\r\n    \"services\":[\r\n        {\"subcategory_service_id\":49, \"quantity\":2}\r\n    ]\r\n}",
+							"raw": "{\r\n    \"region_id\" : 8,\r\n    \"company_id\" : 25,\r\n    \"category_id\" : 14,\r\n    \"subcategory_id\" : 15,\r\n    \"address_lat\" : \"30.033333\",\r\n    \"address_long\" : \"31.233334\",\r\n    \"address_city\" : \"Cairo\",\r\n    \"address_building_no\" : \"78\",\r\n    \"address_floor_no\" : \"44\",\r\n    \"address_flat_no\" : \"\",\r\n    \"address_details\" : \"\",\r\n    \"save_address\" : false,\r\n    \"order_notes\" : \"no notes\",\r\n    \"order_date\" : \"2023-10-28 10:00:00\",\r\n    \"services\":[\r\n        {\"subcategory_service_id\":49, \"quantity\":2}\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1585,6 +1612,35 @@
 			"response": []
 		},
 		{
+			"name": "get pdf",
+			"id": "b4e8d701-7e9b-47f9-8807-82cb28e4c567",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-lang",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{protocol}}://{{host}}/api/get-pdf",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"get-pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "test-email",
 			"id": "08e52465-416b-4870-a047-a31c144fcde6",
 			"protocolProfileBehavior": {
@@ -1619,7 +1675,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTYwMjk3NzgsImV4cCI6MTY5NjYzNDU3OCwibmJmIjoxNjk2MDI5Nzc4LCJqdGkiOiJqS2huaWxlYnF6dmt2eTdMIiwic3ViIjoiMSIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.gdBPF_1mhaSzPnhGJ0jrCeGbtQsE4rh774SsAsB4R-0",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhY2tlbmQuaXNlcnZpY2VzLnNhL2FwaS91c2Vycy9hdXRoL2xvZ2luIiwiaWF0IjoxNjk2NjM0NzMxLCJleHAiOjE2OTcyMzk1MzEsIm5iZiI6MTY5NjYzNDczMSwianRpIjoiOFRTdUNyRTlESW5ic1RlUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.JsTb5ntkzc2lLgTx5Xz9icByiVIBF4dmUvUQvMr1UcA",
 				"type": "string"
 			}
 		]
@@ -1628,7 +1684,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f86475ed-2ab0-4bf7-9347-a2eb53bbe92e",
+				"id": "f589d149-9c47-4364-8cef-806731ad1b22",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1638,7 +1694,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "534b9590-afff-4570-a0ca-1e6fa425c072",
+				"id": "58c5840f-b99b-4cd2-8ad2-50b444652dc0",
 				"type": "text/javascript",
 				"exec": [
 					""

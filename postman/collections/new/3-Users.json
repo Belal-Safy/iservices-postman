@@ -913,21 +913,11 @@
 				}
 			],
 			"id": "ba10c124-88ef-438d-a054-822ae8d49299",
-			"auth": {
-				"type": "bearer",
-				"bearer": [
-					{
-						"key": "token",
-						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTY4MjQ3NTIsImV4cCI6MTY5NzQyOTU1MiwibmJmIjoxNjk2ODI0NzUyLCJqdGkiOiJqekdkcUw2MHVCMmZqUFJ3Iiwic3ViIjoiNyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-BXj13Kq_9cNBabBa_Hy3HmwIhVW-mry6Ze-vh1zE1c",
-						"type": "string"
-					}
-				]
-			},
 			"event": [
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "56ecbd1d-4f1c-417a-b3b3-cb12cbf64bf6",
+						"id": "cced7583-ecdf-4249-87af-d9639179d63a",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -937,7 +927,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "bf64d4f2-0a12-4961-90bb-9b430fca48a0",
+						"id": "75c7681f-6c79-47ab-9ef3-6211b3c7044b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1494,7 +1484,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"region_id\" : 8,\r\n    \"company_id\" : 25,\r\n    \"category_id\" : 2,\r\n    \"subcategory_id\" : 18,\r\n    \"address_lat\" : \"30.033333\",\r\n    \"address_long\" : \"31.233334\",\r\n    \"address_city\" : \"Cairo\",\r\n    \"address_building_no\" : \"78\",\r\n    \"address_floor_no\" : \"44\",\r\n    \"address_flat_no\" : \"\",\r\n    \"address_details\" : \"\",\r\n    \"order_notes\" : \"no notes\",\r\n    \"order_date\" : \"2023-10-28 10:00:00\",\r\n    \"services\":[\r\n        {\"subcategory_service_id\":53, \"quantity\":2}\r\n    ]\r\n}",
+							"raw": "{\r\n    \"region_id\" : 8,\r\n    \"company_id\" : 25,\r\n    \"category_id\" : 14,\r\n    \"subcategory_id\" : 15,\r\n    \"address_lat\" : \"30.033333\",\r\n    \"address_long\" : \"31.233334\",\r\n    \"address_city\" : \"Cairo\",\r\n    \"address_building_no\" : \"78\",\r\n    \"address_floor_no\" : \"44\",\r\n    \"address_flat_no\" : \"\",\r\n    \"address_details\" : \"\",\r\n    \"save_address\" : false,\r\n    \"order_notes\" : \"no notes\",\r\n    \"order_date\" : \"2023-10-28 10:00:00\",\r\n    \"services\":[\r\n        {\"subcategory_service_id\":49, \"quantity\":2}\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1675,7 +1665,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhY2tlbmQuaXNlcnZpY2VzLnNhL2FwaS91c2Vycy9hdXRoL2xvZ2luIiwiaWF0IjoxNjk2NjM0NzMxLCJleHAiOjE2OTcyMzk1MzEsIm5iZiI6MTY5NjYzNDczMSwianRpIjoiOFRTdUNyRTlESW5ic1RlUSIsInN1YiI6IjIiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.JsTb5ntkzc2lLgTx5Xz9icByiVIBF4dmUvUQvMr1UcA",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL3VzZXJzL2F1dGgvbG9naW4iLCJpYXQiOjE2OTY4MjQ3NTIsImV4cCI6MTY5NzQyOTU1MiwibmJmIjoxNjk2ODI0NzUyLCJqdGkiOiJqekdkcUw2MHVCMmZqUFJ3Iiwic3ViIjoiNyIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.-BXj13Kq_9cNBabBa_Hy3HmwIhVW-mry6Ze-vh1zE1c",
 				"type": "string"
 			}
 		]
@@ -1684,7 +1674,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f589d149-9c47-4364-8cef-806731ad1b22",
+				"id": "ae0976f9-2548-4fbc-b8fc-32bc3fcbde48",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1694,7 +1684,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "58c5840f-b99b-4cd2-8ad2-50b444652dc0",
+				"id": "12db743e-3ff1-429d-b657-f7948d8febdf",
 				"type": "text/javascript",
 				"exec": [
 					""

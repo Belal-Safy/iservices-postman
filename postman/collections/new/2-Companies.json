@@ -399,6 +399,120 @@
 			]
 		},
 		{
+			"name": "Notifications",
+			"item": [
+				{
+					"name": "get all notifications",
+					"id": "baba94f5-005d-4f4f-bc16-cc8359204636",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/companies/notifications",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"companies",
+								"notifications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get unread notifications count",
+					"id": "86caacc6-e6cf-4243-85b8-e7a9e260885f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/companies/notifications/unread-count",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"companies",
+								"notifications",
+								"unread-count"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "mark all as read",
+					"id": "977397ef-14ed-403c-9a5f-1ce908c3f4f8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/companies/notifications/mark-all-as-read",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"companies",
+								"notifications",
+								"mark-all-as-read"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "67a8ddac-b5bd-4d3c-b268-0fa136cfb7e4",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "74ae3c04-3b9f-45fb-b1d1-8618b66f08bf",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "1c8d2ae1-b912-4b88-9ee8-6aec52e3a6ca",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
 			"name": "Company Orders",
 			"item": [
 				{
@@ -583,7 +697,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"timestamp\": \"2023-08-22 14:00:00\",\r\n    \"workers\": 1\r\n}",
+							"raw": "{\r\n    \"timestamp\": \"2023-10-10 09:00:00\",\r\n    \"workers\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -709,6 +823,51 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "excel report",
+					"id": "5c48408a-3d9b-4556-8a28-a13d499042e6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/reports/orders-excel?start_datetime=2022-09-27 19:16:10&end_datetime=2024-11-27 22:31:55",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"companies",
+								"orders",
+								"reports",
+								"orders-excel"
+							],
+							"query": [
+								{
+									"key": "start_datetime",
+									"value": "2022-09-27 19:16:10"
+								},
+								{
+									"key": "end_datetime",
+									"value": "2024-11-27 22:31:55"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "8c47a905-c0ae-4084-b3eb-a58a876b666c"
@@ -719,7 +878,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2NvbXBhbmllcy9hdXRoL2xvZ2luIiwiaWF0IjoxNjk2NjUxODcwLCJleHAiOjE2OTcyNTY2NzAsIm5iZiI6MTY5NjY1MTg3MCwianRpIjoidndxQWRUcENURDJVb1B3TiIsInN1YiI6IjI1IiwicHJ2IjoiY2ZlN2VjOTlhMjNmNDM4OGU3ZjFkNWZiODcwODM3NWM4NTRlZGE2NCJ9.wsd850jxmknh84MSLf6AyH1g92thfNTCXul9TZtKCcw",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhY2tlbmQuaXNlcnZpY2VzLnNhL2FwaS9jb21wYW5pZXMvYXV0aC9sb2dpbiIsImlhdCI6MTY5NzMyOTIyMSwiZXhwIjoxNjk3OTM0MDIxLCJuYmYiOjE2OTczMjkyMjEsImp0aSI6IkZKVkU1cUdNckl5RGdIWW0iLCJzdWIiOiIyNSIsInBydiI6ImNmZTdlYzk5YTIzZjQzODhlN2YxZDVmYjg3MDgzNzVjODU0ZWRhNjQifQ.tOZVKhI9lVFp0wCzr6-gSOEY07FATZknRootdPMYgGI",
 				"type": "string"
 			}
 		]
@@ -728,7 +887,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1db0c0bb-385d-4027-bb4b-11a11464a87f",
+				"id": "5a7c3c70-389e-4539-bdd3-18cffd2035ae",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -738,7 +897,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9eb8bdc5-badd-4273-89c7-27ead2184844",
+				"id": "99a894d8-5569-4a17-aa98-b9c82b5c63d7",
 				"type": "text/javascript",
 				"exec": [
 					""

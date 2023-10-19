@@ -568,7 +568,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/32",
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/100",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -577,7 +577,42 @@
 								"api",
 								"companies",
 								"orders",
-								"32"
+								"100"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order invoice",
+					"id": "525380ae-637b-4a40-b184-7b88c5358df6",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"day\": \"2023-10-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/100/invoice",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"companies",
+								"orders",
+								"100",
+								"invoice"
 							]
 						}
 					},

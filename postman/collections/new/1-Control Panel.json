@@ -137,7 +137,7 @@
 							"formdata": [
 								{
 									"key": "email",
-									"value": "belal.aglan3@gmail.com",
+									"value": "belal.aglan2@gmail.com",
 									"type": "default"
 								},
 								{
@@ -2532,7 +2532,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/transactions",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/113/transactions",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2542,7 +2542,7 @@
 								"control-panel",
 								"manage",
 								"orders",
-								"24",
+								"113",
 								"transactions"
 							]
 						}

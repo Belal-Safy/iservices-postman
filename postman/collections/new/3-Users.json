@@ -1298,6 +1298,47 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "add supplements",
+					"id": "263f67f1-0b15-4419-a706-34e99202f298",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "content-lang",
+								"value": "ar",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"supplements_name\": \"قطفعة غيار - TEST\",\r\n    \"quantity\": 5,\r\n    \"price\": 60.75\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/users/orders/112/add-supplements",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"orders",
+								"112",
+								"add-supplements"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "37003c3d-2d52-4dc9-8b15-a17e3f8b66c5",
@@ -1631,35 +1672,6 @@
 					"path": [
 						"api",
 						"test"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "get pdf",
-			"id": "b4e8d701-7e9b-47f9-8807-82cb28e4c567",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "content-lang",
-						"value": "ar",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{protocol}}://{{host}}/api/get-pdf",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"api",
-						"get-pdf"
 					]
 				}
 			},

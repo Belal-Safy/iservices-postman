@@ -2115,7 +2115,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/export-excel-report?start_datetime=2023-09-27 19:16:10&end_datetime=2023-09-27 22:31:55&interval=monthly",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/export-excel-report?start_datetime=2022-09-27 19:16:10&end_datetime=2024-11-27 22:31:55",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2129,15 +2129,13 @@
 							"query": [
 								{
 									"key": "start_datetime",
-									"value": "2023-09-27 19:16:10"
+									"value": "2022-09-27 19:16:10",
+									"type": "text"
 								},
 								{
 									"key": "end_datetime",
-									"value": "2023-09-27 22:31:55"
-								},
-								{
-									"key": "interval",
-									"value": "monthly"
+									"value": "2024-11-27 22:31:55",
+									"type": "text"
 								}
 							]
 						}
@@ -2497,7 +2495,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/103",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/112",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2507,7 +2505,7 @@
 								"control-panel",
 								"manage",
 								"orders",
-								"103"
+								"112"
 							]
 						}
 					},

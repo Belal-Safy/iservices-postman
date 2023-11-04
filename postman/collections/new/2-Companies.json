@@ -568,7 +568,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/100",
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/168",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -577,7 +577,7 @@
 								"api",
 								"companies",
 								"orders",
-								"100"
+								"168"
 							]
 						}
 					},
@@ -602,7 +602,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/100/invoice",
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/168/invoice",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -611,7 +611,7 @@
 								"api",
 								"companies",
 								"orders",
-								"100",
+								"168",
 								"invoice"
 							]
 						}
@@ -637,7 +637,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/search/32",
+							"raw": "{{protocol}}://{{host}}/api/companies/orders/search/168",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -647,7 +647,7 @@
 								"companies",
 								"orders",
 								"search",
-								"32"
+								"168"
 							]
 						}
 					},
@@ -664,7 +664,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"order_status\": \"completed\"\r\n}",
+							"raw": "{\r\n    \"order_status\": \"closed\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"

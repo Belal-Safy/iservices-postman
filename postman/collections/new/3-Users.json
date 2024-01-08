@@ -1526,7 +1526,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"company_id\": 25\r\n}",
+							"raw": "{\r\n    \"company_id\": 34\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1647,35 +1647,6 @@
 					}
 				}
 			]
-		},
-		{
-			"name": "test",
-			"id": "44809862-558a-48c1-9244-a0e43b34d58f",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "content-lang",
-						"value": "ar",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{protocol}}://{{host}}/api/test",
-					"protocol": "{{protocol}}",
-					"host": [
-						"{{host}}"
-					],
-					"path": [
-						"api",
-						"test"
-					]
-				}
-			},
-			"response": []
 		},
 		{
 			"name": "test-email",

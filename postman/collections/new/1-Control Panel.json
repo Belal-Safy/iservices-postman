@@ -2948,6 +2948,35 @@
 				}
 			],
 			"id": "79ca9e53-187d-4317-a47f-ac4b90d5f838"
+		},
+		{
+			"name": "test",
+			"id": "44809862-558a-48c1-9244-a0e43b34d58f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "content-lang",
+						"value": "ar",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{protocol}}://{{host}}/api/test",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"test"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

@@ -726,6 +726,42 @@
 					"response": []
 				},
 				{
+					"name": "update company services discount Copy",
+					"id": "edcbc877-933e-4706-8f57-c8f3af9171c0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[3,3,4],\r\n    \"discount\": -2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/bulk-update-services",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"companies",
+								"1",
+								"bulk-update-services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "update company image",
 					"id": "125827ca-1215-4f82-b16c-6466afa58af0",
 					"protocolProfileBehavior": {
@@ -1997,6 +2033,251 @@
 				}
 			],
 			"id": "fbe16b1d-4305-4b09-909e-7ef3e1033a56",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6273a964-af06-42a7-9326-44b430f3a19c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "2e8d4958-9756-4b98-970b-8f8b5a8f813a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Manage Promo Codes",
+			"item": [
+				{
+					"name": "get all promo codes",
+					"id": "19664a44-e341-4cff-a9b0-53f3be614faf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"promo-codes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get promo code",
+					"id": "b19e9f55-43cf-4751-9a78-8651564f951f",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/1",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"promo-codes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "add promo code",
+					"id": "522488ea-5c63-4613-b25f-445743f9ab11",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-lang",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"promo_code_name\":\"summer discount\",\r\n    \"promo_code\":\"Summer10\",\r\n    \"discount_type\":\"fixed_value\",\r\n    \"discount_value\":\"20\",\r\n    \"min_order_amount\":\"10\",\r\n    \"expire_at\":\"2024-05-17 13:14:00\",\r\n    \"companies\": [42]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/add-promo-code",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"promo-codes",
+								"add-promo-code"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update promo code info",
+					"id": "a938be90-1ed3-4c90-aa90-727a5b046802",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"promo_code_name\":\"summer discount\",\r\n    \"promo_code\":\"TEST10\",\r\n    \"discount_type\":\"fixed_value\",\r\n    \"discount_value\":\"2000\",\r\n    \"min_order_amount\":\"20\",\r\n    \"expire_at\":\"2024-05-17 13:14:00\",\r\n    \"companies\": [34]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/1/update-info",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"promo-codes",
+								"1",
+								"update-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete promo codes",
+					"id": "733dea5e-26b5-45ba-87c2-95a5fba6ee08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/delete",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"promo-codes",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "change promo codes status",
+					"id": "4d6f1fe4-35ca-4e96-b34c-b92e212657c4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ids\":[1,2],\r\n    \"status\": false\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/change-status",
+							"protocol": "{{protocol}}",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"api",
+								"control-panel",
+								"manage",
+								"promo-codes",
+								"change-status"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "22dfe7e0-482b-496c-acfd-a6849ddac0a7",
 			"event": [
 				{
 					"listen": "prerequest",

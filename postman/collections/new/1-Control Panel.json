@@ -2078,7 +2078,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes?",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2088,6 +2088,13 @@
 								"control-panel",
 								"manage",
 								"promo-codes"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text"
+								}
 							]
 						}
 					},
@@ -2146,7 +2153,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"promo_code_name\":\"summer discount\",\r\n    \"promo_code\":\"Summer10\",\r\n    \"discount_type\":\"fixed_value\",\r\n    \"discount_value\":\"20\",\r\n    \"min_order_amount\":\"10\",\r\n    \"expire_at\":\"2024-05-17 13:14:00\",\r\n    \"companies\": [42]\r\n}",
+							"raw": "{\r\n    \"promo_code_name\":\"summer discount\",\r\n    \"promo_code\":\"Summer10\",\r\n    \"discount_type\":\"fixed_value\",\r\n    \"discount_value\":\"20\",\r\n    \"min_order_amount\":\"10\",\r\n    \"expire_at\":\"2024-05-17 13:14:00\",\r\n    \"promo_code_companies\": [42]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2872,7 +2879,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24",
+							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/241",
 							"protocol": "{{protocol}}",
 							"host": [
 								"{{host}}"
@@ -2882,7 +2889,7 @@
 								"control-panel",
 								"manage",
 								"orders",
-								"24"
+								"241"
 							]
 						}
 					},

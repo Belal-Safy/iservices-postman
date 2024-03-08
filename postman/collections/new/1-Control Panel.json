@@ -23,10 +23,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/notifications",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -51,10 +51,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications/unread-count",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/notifications/unread-count",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -80,10 +80,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications/mark-all-as-read",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/notifications/mark-all-as-read",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -148,10 +148,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/login",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/login",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -180,10 +180,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/me",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/me",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -217,10 +217,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/update-user",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/update-user",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -254,10 +254,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/logout",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/logout",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -297,10 +297,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/refresh-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/refresh-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -340,10 +340,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/change-password",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/change-password",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -372,10 +372,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/is-authenticated",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/is-authenticated",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -410,10 +410,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/send-password-reset-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/send-password-reset-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -447,10 +447,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/check-password-reset-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/check-password-reset-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -484,10 +484,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/auth/reset-password",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/auth/reset-password",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -524,10 +524,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -559,10 +559,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/14",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/14",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -601,10 +601,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/add-company",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/add-company",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -636,10 +636,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/13/update-info",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/13/update-info",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -672,10 +672,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-services-price",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/1/update-services-price",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -708,10 +708,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-services-discount",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/1/update-services-discount",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -744,10 +744,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/bulk-update-services",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/1/bulk-update-services",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -781,10 +781,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/update-image",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/1/update-image",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -818,10 +818,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/1/delete-image",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/1/delete-image",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -854,10 +854,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/delete",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/delete",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -889,10 +889,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/companies/change-status",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/companies/change-status",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -952,10 +952,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/users/1",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/users/1",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -987,10 +987,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/users/search?q=ahmed&l=4",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/users/search?q=ahmed&l=4",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1098,10 +1098,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/services",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/7/services",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1134,10 +1134,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/services/2",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/2/services/2",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1178,10 +1178,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/services/add-service",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/2/services/add-service",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1215,10 +1215,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/2/update-info",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/services/2/update-info",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1254,10 +1254,10 @@
 									]
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/3/update-image",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/services/3/update-image",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1287,10 +1287,10 @@
 									"formdata": []
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/2/delete-image",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/services/2/delete-image",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1325,10 +1325,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/delete",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/services/delete",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1362,10 +1362,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/services/change-status",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/services/change-status",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1427,10 +1427,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/subcategories/get-all",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/subcategories/get-all",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1463,10 +1463,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/subcategories/2",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/2/subcategories/2",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1507,10 +1507,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/2/subcategories/add-subcategory",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/2/subcategories/add-subcategory",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1544,10 +1544,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/4/subcategories/7/update-info",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/4/subcategories/7/update-info",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1583,10 +1583,10 @@
 									]
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7/subcategories/30/update-image",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/7/subcategories/30/update-image",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1622,10 +1622,10 @@
 									]
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/1/delete-image",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/subcategories/1/delete-image",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1660,10 +1660,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/delete",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/subcategories/delete",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1697,10 +1697,10 @@
 									}
 								},
 								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/subcategories/change-status",
+									"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/subcategories/change-status",
 									"protocol": "{{protocol}}",
 									"host": [
-										"{{host}}"
+										"{{iServiceHost}}"
 									],
 									"path": [
 										"api",
@@ -1759,10 +1759,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1793,10 +1793,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/7",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/7",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1835,10 +1835,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/add-category",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/add-category",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1870,10 +1870,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/update-info",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/update-info",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1907,10 +1907,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/update-image",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/update-image",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1944,10 +1944,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/1/delete-image",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/1/delete-image",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1980,10 +1980,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/delete",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/delete",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2015,10 +2015,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/categories/change-status",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/categories/change-status",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2078,10 +2078,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes?",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/promo-codes?",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2092,8 +2092,7 @@
 							"query": [
 								{
 									"key": "",
-									"value": null,
-									"type": "text"
+									"value": null
 								}
 							]
 						}
@@ -2119,10 +2118,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/1",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/promo-codes/1",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2161,10 +2160,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/add-promo-code",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/promo-codes/add-promo-code",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2196,10 +2195,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/1/update-info",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/promo-codes/1/update-info",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2232,10 +2231,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/delete",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/promo-codes/delete",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2267,10 +2266,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/promo-codes/change-status",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/promo-codes/change-status",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2321,10 +2320,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/tables-records-count",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/reports/tables-records-count",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2355,10 +2354,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/reports/main-report?start_datetime=2022-09-10 17:49:37&end_datetime=2023-12-10 17:49:37&interval=monthly",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/reports/main-report?start_datetime=2022-09-10 17:49:37&end_datetime=2023-12-10 17:49:37&interval=monthly",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2428,103 +2427,7 @@
 							]
 						}
 					},
-					"response": [
-						{
-							"id": "f4c0b288-95db-4851-8cdc-79c61815ba69",
-							"name": "excel file",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"body": {
-									"mode": "raw",
-									"raw": "",
-									"options": {
-										"raw": {
-											"language": "json"
-										}
-									}
-								},
-								"url": {
-									"raw": "{{protocol}}://{{host}}/api/control-panel/reports/export-excel-report?start_datetime=2022-09-27 19:16:10&end_datetime=2024-11-27 22:31:55",
-									"protocol": "{{protocol}}",
-									"host": [
-										"{{host}}"
-									],
-									"path": [
-										"api",
-										"control-panel",
-										"reports",
-										"export-excel-report"
-									],
-									"query": [
-										{
-											"key": "start_datetime",
-											"value": "2022-09-27 19:16:10"
-										},
-										{
-											"key": "end_datetime",
-											"value": "2024-11-27 22:31:55"
-										}
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "xml",
-							"header": [
-								{
-									"key": "Host",
-									"value": "127.0.0.1:8000"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 02 Nov 2023 23:46:41 GMT"
-								},
-								{
-									"key": "Date",
-									"value": "Thu, 02 Nov 2023 23:46:41 GMT"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "PHP/8.2.4"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "public"
-								},
-								{
-									"key": "Last-Modified",
-									"value": "Thu, 02 Nov 2023 23:46:41 GMT"
-								},
-								{
-									"key": "Content-Disposition",
-									"value": "attachment; filename=\"Orders Report - from September 27, 2022 7_16_PM to November 27, 2024 10_31_PM.xlsx\""
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-								},
-								{
-									"key": "Content-Length",
-									"value": "7645"
-								},
-								{
-									"key": "Accept-Ranges",
-									"value": "bytes"
-								},
-								{
-									"key": "Vary",
-									"value": "Origin"
-								}
-							],
-							"cookie": [],
-							"body": "PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cWG�D�Z\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0004\u0000[Content_Types].xmlSV\u0000\u0000���N�0\u0010E�|E�-J��@\b5��\u0012*Q>`�'�UǶl���L����@�nbE�gr=��tW�d�>(k\n6�r��\u0011V*�,���)�cI�`$hk�`{\fl:�\u001a/�\u000eCBb\u0013\nV���9\u000f��\u001aBf\u001d\u001a�RZ_C�W��\u000e�\n��o���\u000bk\"���ƃM�/��Jb2\u0007\u001f��&\f�i\u001e�\r��(#?�\n<t]0pN+\u0001�\n�\u001b#QS[�J��b]�$km�\u001b\u0017~\u0012\u0018�^c\u0018�\n�#�P!�Zg��<�\u0012�:&�;r�2���y�C�\u0019)�=�R����C�u��A�~�aK��\u0013���ջ��K�ެY\r��\u001d:��޺�\t5�\u0000l��(SG���:�^��\u001eχ\u001f��Q��xH��&�v\u0019>X?c���k�*�(_�����}�>���\u000bk�\u0001PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cW\u0017�78�\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0004\u0000_rels/.relsSV\u0000\u0000���j�0\f��{\n�{���1F�^ʠ�2�\u0007�l�$���-}�y��\u0005��Î��O��v�y\u001a�;�؋Ӱ.JP��޵\u001a^��\u0003���Y\u001aű�3G�Ww�g\u001e)���>�\fqQC��D���b!�]�i$L��3���\f�2n��\u001e�o\u0006T\u000b�:Z\r�h����[��4�ი��]��\u0002yN�,ە\u000f�>�>\u000f�j\n-'\rV�)�#��EF\u0003^6��n���8q\"K��H��>_\u0019ׄ����eƏ�<⇄�Ud�v��\rT�PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cW�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0004\u0000xl/_rels/workbook.xml.relsSV\u0000\u0000���j�0\u0010D��\n��ZvZJ)�s)�\\[�\u0003���LlIh7m��U\u001bH\u001c\b�\u0007�Ĭؙ�H���8�OL�\u0007��*J\u0010�M���\u0014|4��g\u0010��[=\u0004�\n&$��w�7\u001c4�\u001dr}$�M<)p��EJ2\u000eGME���M\u001bҨ9��ɨ�^w(We�$��\u0003�\u000bO��\n��V �)��C��\u0006_�9���J�$���/\u001a�:d\u0005G]d\u001f���WK�s��s��<\u000e�[\f\u000f�V�tB��)?���\u0016��0_!��!�\u0019�4�E�ǩ\u0019y���\u001fPK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cWad���\u0001\u0000\u0000E\u0003\u0000\u0000\u0010\u0000\u0004\u0000docProps/app.xmlSV\u0000\u0000�SAn�0\u0010��\u0015\u0002�1e�(\n�b�:-rhP\u0003v��ZYD(��n\u0004��/%Ê��T�fg\u0007��T���\u0015=&��Wb�(E�ބ��C%\u001e��o>��\u0018|\r.x��\tI��\u000fj�B��\u0016��\u000e�*�2ǵ�dZ�\u0016��s�\t�\u0003�e:��4��]0/\u001dz����$���k�o�d(Ύ��״\u000ef�GO�S�~Z}��Y\u0003�\u000f�\u001f�I�B�ŷ�A�伩��\u000e�K�|ҥ��R�\f8�dc݀#T�P�\b�̶`\u0013i��G�!\u0015d�䩭D�\u001b\b�8��!Y�,βs1b\u0017���\u0015�3��LJN�\b��9�\u001f�r\u0014dp-�S���#�-;���\u0016\u0012��x9O\n    <f\u0010�e|\u0013��?���E�y�rB\u000f�ဃvB?��Ǹ\u000fw�x\u0019�5�v-$��L�0\u0011�>�M.���É�멤M\u000b�����mcx1O�_���E���P.���\u001f@�\u0005PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cWܢozr\u0001\u0000\u0000\u0011\u0003\u0000\u0000\u0011\u0000\u0004\u0000docProps/core.xmlSV\u0000\u0000���N�0\u0010D�|E�+J�4\u0015BQ\u001a$@�@B�\b��^Z�Ķ�-!��iK{�\u0014Mf��;ry����78����l�H\u0002Z\u0018��rN^\u0017\u000f�5I\n        <r-ym4�I\u0007��T\u0017���0\u000e����P�O\u0002H�B�9Y!ڂR/V�p?\t\t\u001d�O�\u001a�A�%�\\��\u0012蔱+�\u0000rɑ�\u001e�ڑH�H)F�ݸ:\u0002��PC\u0003\u001a=�&\u0019�g\u0011\\��\u001e��A�Q�Y8\u001bݙc�ǫ1ض���c4̟���Ǘ�j�t_�\u0000R�R\u0014�\u0001G�W�֦��ݠKz��=���Sh�S���N㧑r��\u0001���a�����/\u001eH5e�<Ͳ��\u000b6-fW�,�dy�X?�\u0011dOm�7�\u000f���.Pa\ra���ɋ\rwJ�\u0002�X�`�A\t^8e1<�*ZG?����/\u00108��\b\u001d��k������U�R�~K�����^q�\u000bPK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cWs�{Y�\u0005\u0000\u0000�\u001b\u0000\u0000\u0013\u0000\u0004\u0000xl/theme/theme1.xmlSV\u0000\u0000�YOo�6\u0014��S\u0010���l)u�:E��햦\r\u0012�C��DK�)Q 餾\r�q��aݰˀ�v\u0018�\u0015h�]�O����\u0001�\n{�c���4i3lC�-������Q�z�A��!\u0011��c9�\u001b\u0016\"��\u0003��\u001d��pp�m!�p\u0012`�\u0013ұfDZ�6?��7TDb��<�\u001b�cEJ�\u001b�-}���2OI\u0002kc.b�`(B;\u0010�\b���n6\u001akv�ib�\u0004����xL}��\u0019Kksμ��+Q2��8�s�:E�\r&N�#g��\u0004:Ĭc���\u001f\r�\u0003e!�������?��y�^\u00101UC��\r�OIW\u0012\u0004�fN'�т�\u0019��W�\u0017��\u0005�U\\�����\u0005�\u001c�}\u001f,uV���t�\n            <5P�ʻ��\u001an\u0015��o��׻ݮ�^���xw\u0005�n��[�\n�]�U��[��Z\u0005�-�k+����5���A\u0011��d\u0005��s\u0011�\u0005d��\r#�\r��|\u0003,Q���\n�D���\u0018��b\u0000�<�X�\u0004�YJ��\u0007\\\u000f�#Aq&\u0000o\u0010��\u0014S�\\��d!�\u000b����Q�!#��W�x��)z�����g�\u000f>~����O\u0006�\u001b8\tu�}��7��?�~���f�����鯿|a\u0006*\u001d��'�?{��������\u0001�%�H�\u000fiL$�E��>��6�\u00002\u0012�\u0018F�V(p\u0004H\u0003���\n��\f3\u0013�K�λ+�\u0000��ק�+�\u001eDb��\u0001�\u0013�\u0015�.�˅ќ�L�n�4\t���T��c|h��;\u0011��4��LM,{\u0011���� �8$\tQ([�\u0013B\fd�(��u���K>V�\u001eE]L�.\u0019ґ2\u0013ݠ1�efR\u0010B]���]����~�\u001cV��\u0010��X\u0012Vq�u\n                <U86j�c�#ob\u0015��<�\t��p� �!a\u001c�\u0003\"��涘U���P��a�e���\u0014�NLț�s\u001d��'�\bǩQg�D:�C9�-��\u001eWF%x5C�1�\u0001'��K�:_Zߡad� ��T�R��j>��\u0018����J\u001d�䴲�(���e{\u000e߂C̔<'�u\u001d�X���4�#�\u0015�+��\n�.V�\\����,Ŷ�k�l���{L\u0019;P3Fnʼ�K0/\u0018�d>ȉ\u0016}~\u001a�c)��\u000b\u0005Ο���c���\b� ��%��d\u001dJ�r\t�\u000b��w~E�`s>���j�\u0007�tK�o.��P�Z\u0019��\nk]y;aN\u0001<�4�3K�N�fkބ�A8{��5\u000bѰQ0#A����<,\u0017\u001e\"\u0019န1r��8�3���z�i��[o'�,A�Ź5�\u000b�Rc%J�j:��:BG����,��c����8\u0005~2+U��I��Ui�k�����m�4j\r��H�T�XF\u0005U�4\u001d�,�ozn懋1�P�ΦE����Z�'CK�c⫚��\\�SE�A\u0014\u001c�\u0011��}\fz���\n����9\u001f\b�P��x��/���k�2;0K#\\֤�\u0016�\u0002�?/t�G�zv��ohJ�\u0002M��]S��\u000b\rn+ȯ^�\u0006\b��=ڱ�P\u0011�*�F�\u001f\bh\u001crY�\u0017���TB,{���J\u000e�u��Q\u0014�0R�4D�B�S� dO�v�������9���,ԕi�;\"��\r��]��P4�&�#r�ɠ٦�\u001a���p���t>��\u0007KA�yz\u0011W+��Q��v*��m�-nzg>jS����\u000b\n7\u0015>[��C�\u000f�G��\u0012�F��.�o19\u0002�ۚq\u0019���Z��]\u0013�l>5g�j�}��7w�g�w����\u0014���L>Z�3����m�\u001fM���{�\u0007p)����\u0000>��t�oPK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cW���\u001c�\u0001\u0000\u0000�\u0005\u0000\u0000\u0014\u0000\u0004\u0000xl/sharedStrings.xmlSV\u0000\u0000�����0\u0010��<��{\u001b�IK��,Q�j9�\u0014�-gS����\u000e�\u0003�\u0015�I��x��68�\"�N[)���g<��$��Wހ�Ti&E\u001eDc\u0018\u0000*6�0�˃���h\u0016\u0000m� ��������x�im�\r\u0015:\u000fjc�4\f���\u001c�l��d+\u0015�ƾ�]�[E1�5��7!�p\u001ar�D\u0000:�>u���0y��A�iVd�x�\bU��<\u000bM������A�?�ǜ\u000e�W��f�,j��%%!�j\r*f�.;�5�Ƌ:�����.��{C\t(�G$o��\u000fX:�!W�Ͷ�j\u0018.���+�H���̙��s\u0000k�t^Ժ\\�G�>\u000b(���^c\u0003쎀S\u0012W����7��^G�S�)A����8)]�-\u0013Vc+p�=5`��y�lۆ�.ٝ\u0007�ќ�~�/��5V�\u001c��h\u0010����l\u000eʩ0����ʲ�V�µ�+�=�xG�\b%�t�rׯ�x#���\u0013\u0018�8I&3�\u001c�\u001d~�z<�8|w\t�(\u001eE�\b�\u0000�\u0014�R4u%��O��\u001fοX\u0004\u0010L�\u0017�ċ]Q�\r�n]V^\u0003*��\t\"���\u0003=\u0007Q�Bh�KeX\u000bq��˒\u0018��ī�����D֢��i��i�B�\u001f-~\u0003PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cW�G��\u000f\u0002\u0000\u0000n\u0006\u0000\u0000\r\u0000\u0004\u0000xl/styles.xmlSV\u0000\u0000�UMo�0\u0010��WX�7^H�v# j#!�ШR�R�\u0006\u000f�U ۬���ژ]@�(���g����͌��R�\u0003\u0018˵�qr��\bT�\u0019Wm������1��*F�V��\u0001,�+^e�\r\u0002\u001e�\u0000\u000ey�[��گv\u0006,�\u0003�\u0010T6�{�[Bl�\u0007I��@��F\u001bI�wMK��C�\rHR�t��!�r��L���΢Z���x�I�5Z͑\u0014�@�U�@Ŕ�\u0017�u��E����g\u0019�D?I�Wk�\r2m��܌#�\u0015�\u0013�=\u0015�2<\u0004I$^�'��\u0019�s��d�\f.��Z��\u0018(��:\u0007F��A��\u001b:�\u0005���Lvk萤o_��j�YP��/ϔl�ݰ4�T����\u0002�\u000fٶ��}�q�wZi�|_�n5��P�\th��nx�\u000f��]`��i�\r�i�\u0015\u0015��c2\n                    <l\rB<���֬��\r�\u0005���bA�˞L/h2#Lt\u0002�\u0012-b/`�#��\u0015rMu\u0019\u001fѮ\u0013C�c�E\u0015�r��E�\u0007���#��\u0010�U\u0012�=|IR��iI�\u000b$%�@����D�����U���(\n                        <\u00109~\bl\u0002��z.\u001cW\u0017j�c�c�~X\u001d��{\u001eY\u00184�\u0017nw\u000e�x�?\u0003���S�\u0017~�n�\u001a�9u|����(~\u0002PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cWJY(ȫ\u0001\u0000\u0000�\u0002\u0000\u0000\u000f\u0000\u0004\u0000xl/workbook.xmlSV\u0000\u0000�R�N�@\u0010}�WX�^l\u0010�6��T \u0014�\u0017TRx���x�޴�N����:i)O�e�������ɚj��ɻV\u001d\u001e4�B�}G�U�Wˏ�T�\t\\\u0007�;l�3�:[|�o}|\\{�XI��\u0003h񅈌q�*��[5�\u0014fu�z@\u000b|�\u0003:��>ZH\u0002�C͒\u0003\u001d\u000f�ɚ��iNk\u000b�v\u0015f�=5|ߓ�\u000b�G�.ME\"\u001aH�\u0012\u000f\u0014X-�=\u0019���� �\u001f`e�'�*\u0003�.;Jص�X���D\u001c×�L\u0006'͉�\u00177����S��@|�s�l�\b��/>�\nt�\r�`�*Q\u001a��d\u0012�\u000bHx\u0015�\u0018��)�\"bO��m��\u0004[rd�%�Ճa\t��o��H/�%0�:zc���Wr�\u0017�&E�D�mx���,X�N\u001b�!�5\u0019Jϭ*o�y���Z�f{[��BV���J̵�z(\u001a�H\u001e�;.E��\u001d���\u0002��2�Κ��y�˧\n�.:�*�5�so��r\"\u0019�\u001f�9\u0017����a�(�����L�?��\u000fPK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cW�\u0005\u0013]�\u0006\u0000\u0000I\u001e\u0000\u0000\u0018\u0000\u0004\u0000xl/worksheets/sheet1.xmlSV\u0000\u0000�Y�r�:\u0014}?_��^\fB�8��4Msk�ƹ4y# �L\u0001q@����g\u0003\u0012\u0006q���\u0004im�}�� ���[\u0018(\u001b��>��UC�U�D.��hy�>ܟ}�U%eN�9\u0001�ȱ�NR����ɖ&�\u0015!L\u0001��4v\\\u0000ㄤ$�\u00105���cu�X|4\u0018�N�јD�,h\u0012:\f��r��\u001a�˙�`�t}8\b\u001d?�\fG�G8�b�䔺�D� IH�0�)]�q*�޼\u000f�y����E<�\u0010O\u000b��3p�/�݄�t�4��<�f������[�1\"�撖2��G�\n���:�\u0002t1���\u000f|��s�J�\u001e],#�8�\u0001�#�帕$�&���\u0004��$��M�\u0013�f�\u001f��DI�!\u0004�~B\u0002�\u0005�b��_�X61�N\u0006�:χ��D�$dq�Ό����Lr�G�l�ʵ�9\t�ˈ�sgr}��o\u0006^�\u0014�<]�����!\u001c�*K֤����o48�L�-��@�se�\u001d��!�H\u0010\u001c�/Y����d�TB��T�Epg�v@�\u001eY8뀁�s�\u0013�\u001aV\u0015^�k�!�]V\u0018�>\u0007�es�ȥA��UB?ʓ\f��\"Y�c+��5k8V�W��3��\u0014�u�h�T���{�킶 D�\u0010��c\r���|&�3w\u0001Z@��&Ĝ\u0010�������ބ\u0016'�v\u0011\"Ͷ�ބCN8\n                        <T�#N8*\t��a���؜�>T�cN8>T��.��\u001fj[��W�C�m�n1v�b\f!qkJ�0F�c��x�\tJ�2\u0006>�]�\u0010McT�f\u0004����!������\u0019�؟Q�k\u001c\u0013k���R��1��R�1>T)�h\u001e�k\u001e��&i�O)�\u0007U�\u0007���ۃ�G\r:T-�h\u001e�k\u001e4����F�D�]� \u0003D�Z��A֡�\u001aH4\u000f\u001a\u001e,q�=h��'��8�\u0014Gi�9�IB�JR��b'{c0��\u000b8�fg�t\u000e��\u0014f7S}2�d<��ia�-�5-P��ia�-�7-p��ia�-~4-�u��ŨnqѴ��\u0016�M�q�⪥bRQ�[L���l1�����D��M��T��\u0016\u0013���[L��޵�H����HŽo1���Т6���-&Ru�ZL���i1����b\"U��0AU\u0013���Y�ͮ�\u0003hಋQ{\u0017#�'\u0012�\tj�ך#i�Nk��=�k��1gUД��G\r�\u0002:���6\\�@i\u0003.QkE�jk�\u001d����ʟ5P���=�4)��\u0002���[�\u0001p/�c��!]\u001f6��\u001el���g�Cw\u0018��9=��6<��l�%�\u00052�\u001bk^�\u001a\u001b\u000f�1̸~-]�V���vݛ\\��F����7�to����ӽ٧�\u001a(�\n                            <7�t_\u0003凐ٮ{�O�f���>�\u0017�0\u001e6tov辘\u001f©HR}\u0001Xp����Nd.�\u001dV�Q��\u001bz0�\u001d��<�E��,K���֤%x\u0005@�Rm��\u00128�ɷ����fM�&v�.v��.��\u0004��\u001d��\u001d��\u001d��\u001d��\u001d��\u001d���\u0006J>/q�����\u0006�\u0007,�'v�'v�)v�!v�%v�)�Nd���s�C����L��dF�[{\u0001��ݖ������|h{�\by6k\u00025�[�:���%7'V�έ>�[}:��tn��\nb�0c�鼶R\u0002/�v�[}:��tn�霗\u0013\u001e��������@��\u0015��\u0018�-A�9�����R��`s�C�=k\u001e��x�>����=Y]�瀝��*鞗bli�\u0004�tD>�5�B���ky��\u0011���\u000fh�r��d�\u0004)�ӗ3s\"^���>v�䧓,}X\u0013�\u0005 P\u001cUI��\u001b�5�q~���A\u0019��\u0018��-�\b��\u000bJ�\u0018p^p���؉I2��#�k\rM|\u0012��+߱ʿ�@ӺN�{\u0003\u001c5��g��������\t\u0018f�7I�ף��~E��\rI2�E\n                                <gy ��/\u0016$\u0001_7��}C��\u000e%p�')+��\u0010�|�:���\u0019�\t�e���\n���z^�\tv�r\r���bZ\\\u0013p_�W\u0007�u��:Xd��Kj�|P.���\u0005�NX�]��IX��t\u001d1�{N�\u0015x�?PK\u0003\u0004\u0014\u0000\u0000\b\b\u0000�\u0015cW�KR\"x\u0000\u0000\u0000�\u0000\u0000\u0000#\u0000\u0004\u0000xl/worksheets/_rels/sheet1.xml.relsSV\u0000\u0000M�1\u000e\u0002!\u0010\u0000{_A��@\u000bc�q��\u0000�\u000f�p+\u0010a!,1�{)-'��y����$\u0016�p�\f(bW�����~ݟAIG�0\u0015&\u000b_\u0012X��|��}4\u0012b\u00155&,\u0016B�����@\u0019e*�x�gi\u0019���uE�BO�h�I��\u0007��\u0007PK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cWG�D�Z\u0001\u0000\u0000�\u0004\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0000\u0000\u0000\u0000[Content_Types].xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cW\u0017�78�\u0000\u0000\u0000K\u0002\u0000\u0000\u000b\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0001\u0000\u0000_rels/.relsPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cW�$�V�\u0000\u0000\u0000�\u0002\u0000\u0000\u001a\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0002\u0000\u0000xl/_rels/workbook.xml.relsPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cWad���\u0001\u0000\u0000E\u0003\u0000\u0000\u0010\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0003\u0000\u0000docProps/app.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cWܢozr\u0001\u0000\u0000\u0011\u0003\u0000\u0000\u0011\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0005\u0000\u0000docProps/core.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cWs�{Y�\u0005\u0000\u0000�\u001b\u0000\u0000\u0013\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000'\u0007\u0000\u0000xl/theme/theme1.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cW���\u001c�\u0001\u0000\u0000�\u0005\u0000\u0000\u0014\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000\u0017\r\u0000\u0000xl/sharedStrings.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cW�G��\u000f\u0002\u0000\u0000n\u0006\u0000\u0000\r\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000E\u000f\u0000\u0000xl/styles.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cWJY(ȫ\u0001\u0000\u0000�\u0002\u0000\u0000\u000f\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000�\u0011\u0000\u0000xl/workbook.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cW�\u0005\u0013]�\u0006\u0000\u0000I\u001e\u0000\u0000\u0018\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u0000_\u0013\u0000\u0000xl/worksheets/sheet1.xmlPK\u0001\u0002\u0003\u0006\u0014\u0000\u0000\b\b\u0000�\u0015cW�KR\"x\u0000\u0000\u0000�\u0000\u0000\u0000#\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000 \u0000\u0000\u00009\u001a\u0000\u0000xl/worksheets/_rels/sheet1.xml.relsPK\u0005\u0006\u0000\u0000\u0000\u0000\u000b\u0000\u000b\u0000�\u0002\u0000\u0000�\u001a\u0000\u0000\u0000\u0000"
-						}
-					]
+					"response": []
 				}
 			],
 			"id": "265af06a-f605-49ae-906b-fb1c54e4f891"
@@ -2546,10 +2449,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/notifications/get-manual-notifications",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/notifications/get-manual-notifications",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2615,10 +2518,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/notifications/send-notification-to-users",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/notifications/send-notification-to-users",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2655,10 +2558,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/regions/",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/regions/",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2696,10 +2599,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/banners/",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2732,10 +2635,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/banners/",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2767,10 +2670,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/change-index/6",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/banners/change-index/6",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2803,10 +2706,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/banners/1",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/banners/1",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2845,10 +2748,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2879,10 +2782,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/241",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/241",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2914,10 +2817,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/168/transactions",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/168/transactions",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2950,10 +2853,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/165/transactions",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/165/transactions",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -2986,10 +2889,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/25/get-refund-request",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/25/get-refund-request",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3022,10 +2925,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/25/update-refund",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/25/update-refund",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3058,10 +2961,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/get-cancel-request",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/24/get-cancel-request",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3094,10 +2997,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/24/update-cancel",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/24/update-cancel",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3136,10 +3039,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/get-all-refund-requests",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/get-all-refund-requests",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3177,10 +3080,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/get-all-cancel-requests",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/get-all-cancel-requests",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3218,10 +3121,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/control-panel/manage/orders/requests-need-attention-count",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/control-panel/manage/orders/requests-need-attention-count",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -3253,10 +3156,10 @@
 					}
 				],
 				"url": {
-					"raw": "{{protocol}}://{{host}}/api/test",
+					"raw": "{{protocol}}://{{iServiceHost}}/api/test",
 					"protocol": "{{protocol}}",
 					"host": [
-						"{{host}}"
+						"{{iServiceHost}}"
 					],
 					"path": [
 						"api",

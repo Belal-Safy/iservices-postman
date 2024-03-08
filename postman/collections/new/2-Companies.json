@@ -28,10 +28,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/update-locale",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/update-locale",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -68,10 +68,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/login",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/login",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -97,10 +97,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/me",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/me",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -134,10 +134,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/logout",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/logout",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -177,10 +177,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/refresh-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/refresh-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -217,10 +217,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/change-password",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/change-password",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -255,10 +255,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/send-password-reset-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/send-password-reset-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -292,10 +292,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/check-password-reset-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/check-password-reset-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -329,10 +329,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/reset-password",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/reset-password",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -358,10 +358,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/auth/is-authenticated",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/auth/is-authenticated",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -415,10 +415,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/notifications",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/notifications",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -443,10 +443,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/notifications/unread-count",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/notifications/unread-count",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -472,10 +472,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/notifications/mark-all-as-read",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/notifications/mark-all-as-read",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -534,10 +534,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/home-orders",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/home-orders",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -568,10 +568,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/168",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/168",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -602,10 +602,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/205/invoice",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/205/invoice",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -637,10 +637,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/search/168",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/search/168",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -672,10 +672,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/25/change-order-status",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/25/change-order-status",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -707,10 +707,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -740,10 +740,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/add-unavailable-worker",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/add-unavailable-worker",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -774,10 +774,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/delete-unavailable-worker",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/delete-unavailable-worker",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -808,10 +808,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/filter/get-company-categories",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/filter/get-company-categories",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -843,10 +843,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/filter/get-company-subcategories",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/filter/get-company-subcategories",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -878,10 +878,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/companies/orders/reports/orders-excel?start_datetime=2022-09-27 19:16:10&end_datetime=2024-11-27 22:31:55",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/companies/orders/reports/orders-excel?start_datetime=2022-09-27 19:16:10&end_datetime=2024-11-27 22:31:55",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",

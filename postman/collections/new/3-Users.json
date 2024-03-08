@@ -34,10 +34,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/login",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/login",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -89,10 +89,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/signup",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/signup",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -123,10 +123,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/logout",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/logout",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -163,10 +163,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/refresh-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/refresh-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -198,10 +198,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/send-password-reset-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/send-password-reset-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -232,10 +232,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/check-password-reset-token",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/check-password-reset-token",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -266,10 +266,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/reset-password",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/reset-password",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -295,10 +295,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/auth/is-authenticated",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/auth/is-authenticated",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -352,10 +352,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/home/banners",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/home/banners",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -377,10 +377,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/home/categories",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/home/categories",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -437,10 +437,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/notifications",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/notifications",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -465,10 +465,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/notifications/unread-count",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/notifications/unread-count",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -494,10 +494,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/notifications/mark-all-as-read",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/notifications/mark-all-as-read",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -557,10 +557,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/me",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/me",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -597,10 +597,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/change-password",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/change-password",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -632,10 +632,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/send-email-verification-code",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/send-email-verification-code",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -666,10 +666,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/verify-email-confirm-code",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/verify-email-confirm-code",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -700,10 +700,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/update-info",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/update-info",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -735,10 +735,10 @@
 							]
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/update-profile-image",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/update-profile-image",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -764,10 +764,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/delete-profile-image",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/delete-profile-image",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -793,10 +793,10 @@
 							"formdata": []
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/get-user-addresses",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/get-user-addresses",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -827,10 +827,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/delete-address/3",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/delete-address/3",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -862,10 +862,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/update-locale",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/update-locale",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -896,10 +896,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/profile/delete-user",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/profile/delete-user",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -949,10 +949,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -974,10 +974,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/238",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/238",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1008,10 +1008,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/168/invoice",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/168/invoice",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1043,10 +1043,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/167/change-date",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/167/change-date",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1078,10 +1078,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/38/cancel-order",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/38/cancel-order",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1119,10 +1119,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/11/get-cancel-request",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/11/get-cancel-request",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1160,10 +1160,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/42/refund",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/42/refund",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1201,10 +1201,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/25/get-refund",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/25/get-refund",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1242,10 +1242,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/12/review",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/12/review",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1283,10 +1283,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/231/add-services",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/231/add-services",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1324,10 +1324,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/orders/231/add-supplements",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/orders/231/add-supplements",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1378,10 +1378,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/categories/4/subcategories",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/categories/4/subcategories",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1405,10 +1405,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/subcategories/20/services",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/subcategories/20/services",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1432,10 +1432,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/regions",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/regions",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1466,10 +1466,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/get-companies",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/get-companies",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1500,10 +1500,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/get-company-available-times",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/get-company-available-times",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1534,10 +1534,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/get-company-unavailable-days",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/get-company-unavailable-days",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1568,10 +1568,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/get-order-summary",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/get-order-summary",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1608,10 +1608,10 @@
 							}
 						},
 						"url": {
-							"raw": "{{protocol}}://{{host}}/api/users/order-process/checkout",
+							"raw": "{{protocol}}://{{iServiceHost}}/api/users/order-process/checkout",
 							"protocol": "{{protocol}}",
 							"host": [
-								"{{host}}"
+								"{{iServiceHost}}"
 							],
 							"path": [
 								"api",
@@ -1664,10 +1664,10 @@
 					}
 				],
 				"url": {
-					"raw": "{{protocol}}://{{host}}/api/test-email",
+					"raw": "{{protocol}}://{{iServiceHost}}/api/test-email",
 					"protocol": "{{protocol}}",
 					"host": [
-						"{{host}}"
+						"{{iServiceHost}}"
 					],
 					"path": [
 						"api",
@@ -1693,10 +1693,10 @@
 					}
 				],
 				"url": {
-					"raw": "{{protocol}}://{{host}}/api/test",
+					"raw": "{{protocol}}://{{iServiceHost}}/api/test",
 					"protocol": "{{protocol}}",
 					"host": [
-						"{{host}}"
+						"{{iServiceHost}}"
 					],
 					"path": [
 						"api",

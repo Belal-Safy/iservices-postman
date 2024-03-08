@@ -12,7 +12,6 @@ rootDirectory = postman/collections/new
 files[] = {"id":"28168267-f96baec3-8b19-4519-bd02-b3da5d389dde","path":"1-Control Panel.json","metaData":{}}
 files[] = {"id":"28168267-f9bc8217-1855-4711-804f-d839bb6bc164","path":"2-Companies.json","metaData":{}}
 files[] = {"id":"28168267-1e9116a7-2be9-44d8-961a-2d7ca32a5c6a","path":"3-Users.json","metaData":{}}
-files[] = {"id":"28168267-49dd3da6-540c-44ce-bd03-85015c97a26a","path":"Node js Notifications.json","metaData":{}}
 
 [config.relations.collections.metaData]
 
